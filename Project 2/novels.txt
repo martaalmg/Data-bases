@@ -1,0 +1,214 @@
+db.novels.insert({
+    writer: {
+        name: "Juan Gómez Jurado",
+        biography: "Born a winter at madrid",
+        dateBirth: ISODate("1977-12-16"),
+    },
+    title: "Loba negra",
+    genre: "suspense",
+    year: 2019,
+    publisher: "Anaya",
+    country: "Spain",
+    summary: "The corpse of a woman appears floating in the Manzanares river, in Madrid. The Basque inspector Jon Gutiérrez goes there, wondering why Detective Antonia Scott is not with him. After getting her out, Antonia Scott appears by surprise and deduces that the victim was thrown into the river from a bridge. She wishes with all her might, with an obsession that has taken hold of her, that she be Sandra Fajardo.",
+    awards: {
+        name: "Princesa de Asturias",
+        organization: "Spainish govern",
+        year: 2020,
+    },
+    comment: [
+    {
+        comment: "A novel, therefore, worthy, that surpasses its predecessor in the narration of the entire development, in its completion and in interest, with a writing as particular as its own main character.",
+        score: 7,
+        date: ISODate("2019-12-02"),
+        time: "16:21",
+    },
+    {
+        comment: "Loba Negra, is a thriller with strength, a vigorous narrative that predominates over the psychological treatment of the protagonists where the author achieves a combined good to create a final result that convinces and surprises in equal parts.",
+        score: 9,
+        date: ISODate("2019-03-15"),
+        time: "15:04",
+    },
+    {
+        comment: "What really dazzles in Loba Negra is the narrative itself, simple and at the same time complex, hard and raw at some moments, beautiful and carefree in others, full of details and references to movies, series and music.",
+        score: 10,
+        date: ISODate("2021-06-11"),
+        time: "13:45",
+    },
+    ],   
+})  
+
+
+
+db.novels.insert({
+    writer: {
+        name: "Juan Gómez Jurado",
+        biography: "Born a winter at madrid",
+        dateBirth: ISODate("1977-12-16"),
+    },
+    title: "Espía de Dios",
+    genre: "crime novel",
+    year: 2006,
+    publisher: "Anaya",
+    country: "Spain",
+    summary: "A serial killer ... A criminal psychiatrist ... A CIA priest ... A conclave under siege ... A deadly game ... where nothing is what it seems. A fast-paced thriller full of action, violence and mystery, in which reality and fiction are mixed to disturb us with what, without being true, could well be.",
+    comment: [
+    {
+        comment: "In my opinion, the author's weakest novel. Despite that, the plot grips you to such an extent that you can't stop reading. Themed quite similar to Angels and Demons, as entertaining as this one, and better documented. Highly recommended for fans of Dan Brown and thrillers.",
+        score: 3,
+        date: ISODate("2006-12-04"),
+        time: "12:24",
+    },
+    {
+        comment: "In my opinion it is one of the weakest that I have read about this author, although it is not bad to spend a while without many more pretensions. Something hackneyed and recurring theme",
+        score: 1,
+        date: ISODate("2009-08-25"),
+        time: "21:30",
+    },
+    ],   
+}) 
+
+
+db.novels.insert({
+    writer: {
+        name: "Juan Gómez Jurado",
+        biography: "Born a winter at madrid",
+        dateBirth: ISODate("1977-12-16"),
+    },
+    title: "La leyenda del ladrón",
+    genre: "crime novel",
+    year: 2012,
+    publisher: "Planeta libros",
+    country: "Spain",
+    summary: "The plague leaves young Sancho sick and orphaned at his mother's inn. A very literate gentleman takes pity on him and takes him to a religious orphanage in Seville so that he can recover and have a place to live and a chance in life. From here on, Sancho will live many experiences that will make him mature and grow by blows. He will also know the value of friendship from the hand of Bartolo and Josué and the love of Clara.",
+    awards: {
+        name: "Planeta",
+        organization: "El circulo de lectores",
+        year: 2013,
+    },
+    comment: [
+    {
+        comment: "Tedious. A good idea that he did not know how to take advantage of.",
+        score: 5,
+        date: ISODate("2012-12-14"),
+        time: "22:25",
+    },
+    {
+        comment: "Entertaining from start to finish. It does not decline at any time, it keeps you anxious to know what is going to happen to the protagonist..",
+        score: 7,
+        date: ISODate("2015-09-30"),
+        time: "15:04",
+    },
+    ],   
+})   
+
+
+
+db.novels.insert({
+    writer: {
+        name: "Dolores Redondo",
+        biography: "Born a winter at San Sebastián, The Basque Country.",
+        dateBirth: ISODate("1969-02-01"),
+    },
+    title: "La cara Norte del corazón",
+    genre: "mistery novel",
+    year: 2019,
+    publisher: "Destino",
+    country: "Spain",
+    summary: "When Amaia Salazar was twelve years old, she was lost in the forest for sixteen hours. It was early morning when they found her twenty miles north of the place where she had lost track of the trail..",
+    comment: [
+    {
+        comment: "After the wonders he has written, this one I think does not even reach the bottom of other people's shoes.",
+        score: 4,
+        date: ISODate("2019-11-24"),
+        time: "20:27",
+    },
+    {
+        comment: "Of the five books that Dolores Redondo has written, this one, for me, is the weakest.",
+        score: 5,
+        date: ISODate("2020-01-15"),
+        time: "15:04",
+    },
+    ],   
+})  
+
+
+
+
+
+db.novels.insert({
+    writer: {
+        name: "Dolores Redondo",
+        biography: "Born a winter at San Sebastián, The Basque Country.",
+        dateBirth: ISODate("1969-02-01"),
+    },
+    title: "El guardián invisible",
+    genre: "crime novel",
+    year: 2013,
+    publisher: "Destino",
+    country: "Spain",
+    summary: "On the banks of the Baztán river, in the Navarra valley, the naked body of a teenage girl appears in a circumstance that is related to a murder that occurred in the surroundings a month ago.",
+    awards: {
+        name: "Princesa de Asturias",
+        organization: "Spainish govern",
+        year: 2013,
+    },
+
+    comment: [
+    {
+        comment: "Although at first it was difficult for me to get hooked on the story, in the end it was worth it. The well-crafted story, with characters with strong personalities and episodes in the history of the characters that mark the future of their lives.",
+        score: 9,
+        date: ISODate("2015-10-02"),
+        time: "20:27",
+    },
+    {
+        comment: "I am not surprised that it has been taken to the cinema, because together with the other two in the trilogy, it is fascinating due to its theme of intrigue and suspense.",
+        score: 10,
+        date: ISODate("2016-12-25"),
+        time: "15:04",
+    },
+    ],   
+}) 
+
+
+db.novels.insert({
+    writer: {
+        name: "Dolores Redondo",
+        biography: "Born a winter at San Sebastián, The Basque Country.",
+        dateBirth: ISODate("1969-02-01"),
+    },
+    title: "Los privilegios del Ángel",
+    genre: "fiction novel",
+    year: 2009,
+    publisher: "Destino",
+    country: "Spain",
+    summary: "In the humble fishing bay of Pasajes, in the 70s, surrounded by fishing piers, longshoremen, humidity and salting, a strong friendship is forged between Pakutxa and Celeste, two five-year-old girls.",
+    awards: {
+        name: "Premios Planeta",
+        organization: "Spainish govern",
+        year: 2010,
+    },
+
+    comment: [
+    {
+        comment: "On this occasion Dolores Redondo brings us a spectacular novel, but very sad, crude and hopeless. Therefore, it is not suitable for all hearts.",
+        score: 9,
+        date: ISODate("2015-09-13"),
+        time: "20:27",
+    },
+    {
+        comment: "This novel is not at all what we are used to reading about Dolores, it is not a fast-paced thriller, but rather a hard story, about grief and loss, which I do not recommend to those people who are having a hard time in their life.",
+        score: 7,
+        date: ISODate("2011-01-25"),
+        time: "15:04",
+    },
+    ],   
+})   
+
+
+
+db.novels.find({"writer.name" : "Juan Gómez Jurado"})
+db.novels.find({"genre":"crime novel"},{title:1})
+db.novels.find({"title":"Loba negra"},{"comment.comment":1})
+db.novels.find({"awards.year":2020},{"title":1, "award.name":1})
+db.novels.find({"writer.name": "Dolores Redondo", "comment.score":{$gt:8}},{"title":1, "summary":1})
+

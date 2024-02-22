@@ -1,0 +1,674 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2513
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;\f1\froman\fcharset0 Times-Roman;\f2\fmodern\fcharset0 CourierNewPSMT;
+}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red255\green255\blue255;\red115\green138\blue4;
+\red23\green23\blue23;\red252\green244\blue220;\red129\green144\blue144;\red165\green119\blue5;\red202\green202\blue202;
+\red37\green146\blue134;\red255\green255\blue255;\red202\green202\blue202;}
+{\*\expandedcolortbl;;\cssrgb\c0\c1\c1;\cssrgb\c100000\c100000\c99985;\cssrgb\c52157\c60000\c0;
+\cssrgb\c11765\c11765\c11765;\cssrgb\c99216\c96471\c89020;\cssrgb\c57647\c63137\c63137;\cssrgb\c70980\c53725\c0;\cssrgb\c83137\c83137\c83137;
+\cssrgb\c16471\c63137\c59608;\cssrgb\c100000\c100000\c100000;\cssrgb\c83229\c83229\c83125;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww25400\viewh16000\viewkind0
+\deftab560
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\f0\fs26 \cf2 \cb3 #
+\f1\fs24 \expnd0\expndtw0\kerning0
+BORRAR
+\f0\fs26 \kerning1\expnd0\expndtw0 \
+\
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs24 \cf2 \expnd0\expndtw0\kerning0
+MATCH (n) OPTIONAL MATCH (n)-[r]-() DELETE n,r\
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\f0\fs26 \cf2 \kerning1\expnd0\expndtw0 \
+\
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs24 \cf2 \expnd0\expndtw0\kerning0
+MATCH (n) RETURN n\
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\f0\fs26 \cf2 \kerning1\expnd0\expndtw0 \
+\
+\
+#CREAMOS PERSON\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs24 \cf2 \expnd0\expndtw0\kerning0
+CREATE (MartaNode: person \{name: 'Marta', nick: 'Martita', country: 'Spain'\})\
+CREATE (AnnunziataNode: person \{name: 'Annunziata', nick: 'Tatis', country: 'Spain'\})\
+CREATE (EduardoNode: person \{name: 'Eduardo', nick: 'Edu', country: 'Albania'\})\
+CREATE (MarcosNode: person \{name: 'Marcos', nick: 'Marc', country: 'England'\})\
+CREATE (GraciaNode: person \{name: 'Gracia', nick: 'Gra', country: 'Colombia'\})\
+CREATE (JacoboNode: person \{name: 'Jacobo', nick: 'Jaco', country: 'Spain'\})\
+CREATE (MartsNode: person \{name: 'Marta', nick: 'Marts', country: 'Poland'\})\
+CREATE (BeltranNode: person \{name: 'Beltran', nick: 'Belval', country: 'Canada'\})\
+CREATE (PabloNode: person \{name: 'Pablo', nick: 'Pabli', country: 'Albania'\})\
+CREATE (InesNode: person \{name: 'Ines', nick: 'Nesi', country: 'Germany'\})\
+CREATE (CeliaNode: person \{name: 'Celia', nick: 'Celi', country: 'Italy'\})\
+CREATE (JimenaNode: person \{name: 'Jimena', nick: 'Jime', country: 'Rusia'\})\
+CREATE (EvaNode: person \{name: 'Eva', nick: 'Evi', country: 'Rusia'\})\
+CREATE (SofiaNode: person \{name: 'Sofia', nick: 'Sofi', country: 'Germany'\})\
+CREATE (YagoNode: person \{name: 'Yago', nick: 'Yg', country: 'Spain'\})\
+CREATE (JesusNode: person \{name: 'Jesus', nick: 'J', country: 'England'\})\
+CREATE (AnnunNode: person \{name: 'Annunziata', nick: 'Annun', country: 'USA'\})\
+CREATE (JavierNode: person \{name: 'Javier', nick: 'Javi', country: 'Albania'\})\
+CREATE (AdolfoNode: person \{name: 'Adolfo', nick: 'Ado', country: 'Italy'\})\
+CREATE (MTeresaNode: person \{name: 'MTeresa', nick: 'Mayte', country: 'Portugal'\})\
+CREATE (JorgeNode: person \{name: 'Jorge', nick: 'George', country: 'Mexico'\})\
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\f0\fs26 \cf2 \kerning1\expnd0\expndtw0 \
+\
+\
+#CREAMOS NOVEL\
+\
+CREATE (novel1: novel \{title: 'Edenbrooke', date: '2012', genre: 'romance'\}) \
+CREATE (novel2: novel \{title: 'Blackmoore', date: '2013', genre: 'romance'\}) \
+CREATE (novel3: novel \{title: 'Divergent', date: '2015', genre: 'adventure'\}) \
+CREATE (novel4: novel \{title: 'Insurgent', date: '2016', genre: 'adventure'\}) \
+CREATE (novel5: novel \{title: '5 horas con Mario', date: '1966', genre: 'narrative'\}) \
+CREATE (novel6: novel \{title: 'El camino', date: '1950', genre: 'narrative'\}) \
+CREATE (novel7: novel \{title: 'Allegiant', date: '2017', genre: 'adventure'\}) \
+CREATE (novel8: novel \{title: 'El tiempo entre costuras', date:'2009', genre: 'romance'\}) \
+CREATE (novel9: novel \{title: 'La templanza', date: '2015', genre: 'fiction'\}) \
+CREATE (novel10: novel \{title: 'Misi\'f3n Olvido', date:'2012', genre: 'fiction'\}) \
+CREATE (novel11: novel \{title: 'Sira', date: '2021', genre: 'historic'\}) \
+CREATE (novel12: novel \{title: 'Come, sweet home', date: '2021', genre: 'adventure'\}) \
+CREATE (novel13: novel \{title: 'Cartas de amor', date: '1983', genre: 'romance'\})\
+CREATE (novel14: novel \{title: 'Las ratas', date: '1962', genre: 'historic'\}) \
+\
+\
+\
+\
+\
+#CREAMOS WRITER\
+\
+CREATE (authorMD: writer \{name: 'Maria Due\'f1as', age: '57'\}) \
+CREATE (authorVR: writer \{name: 'Veronica Roth', age: '33'\}) \
+CREATE (authorMDe: writer \{name: 'Miguel Delibes', age: '100'\}) \
+CREATE (authorJD: writer \{name: 'Julianne Donaldson', age: '73'\}) \
+\
+\
+\
+\
+\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1\fs24 \cf2 \expnd0\expndtw0\kerning0
+#RELATIONSHIP 
+\f0\fs26 \kerning1\expnd0\expndtw0 IS_FRIEND_OF (property: since...)
+\f1\fs24 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\partightenfactor0
+\cf2 CREATE (MartaNode)-[:IS_FRIEND_OF \{since_year:[2019]\}]->(AnnunziataNode), (AnnunziataNode)-[:IS_FRIEND_OF \{since_year:[2019]\}]->(MartaNode)\
+CREATE (MartaNode)-[:IS_FRIEND_OF \{since_year:[2007]\}]->(EvaNode), (EvaNode)-[:IS_FRIEND_OF \{since_year:[2007]\}]->(MartaNode)\
+CREATE (MartaNode)-[:IS_FRIEND_OF \{since_year:[2019]\}]->(EduardoNode), (EduardoNode)-[:IS_FRIEND_OF \{since_year:[2019]\}]->(MartaNode)\
+CREATE (MartaNode)-[:IS_FRIEND_OF \{since_year:[2019]\}]->(MarcosNode), (MarcosNode)-[:IS_FRIEND_OF \{since_year:[2019]\}]->(MartaNode)\
+CREATE (MartaNode)-[:IS_FRIEND_OF \{since_year:[2007]\}]->(JacoboNode), (JacoboNode)-[:IS_FRIEND_OF \{since_year:[2007]\}]->(MartaNode)\
+CREATE (MartaNode)-[:IS_FRIEND_OF \{since_year:[2019]\}]->(GraciaNode), (GraciaNode)-[:IS_FRIEND_OF \{since_year:[2019]\}]->(MartaNode)\
+CREATE (MartsNode)-[:IS_FRIEND_OF \{since_year:[2005]\}]->(GraciaNode), (GraciaNode)-[:IS_FRIEND_OF \{since_year:[2005]\}]->(MartsNode)\
+CREATE (MartsNode)-[:IS_FRIEND_OF \{since_year:[2005]\}]->(JorgeNode), (JorgeNode)-[:IS_FRIEND_OF \{since_year:[2005]\}]->(MartsNode)\
+CREATE (MartsNode)-[:IS_FRIEND_OF \{since_year:[2005]\}]->(BeltranNode), (BeltranNode)-[:IS_FRIEND_OF \{since_year:[2005]\}]->(MartsNode)\
+CREATE (MartsNode)-[:IS_FRIEND_OF \{since_year:[2005]\}]->(PabloNode), (PabloNode)-[:IS_FRIEND_OF \{since_year:[2005]\}]->(MartsNode)\
+CREATE (EduardoNode)-[:IS_FRIEND_OF \{since_year:[2010]\}]->(MarcosNode), (MarcosNode)-[:IS_FRIEND_OF \{since_year:[2010]\}]->(EduardoNode)\
+CREATE (MarcosNode)-[:IS_FRIEND_OF \{since_year:[2005]\}]->(AnnunziataNode), (AnnunziataNode)-[:IS_FRIEND_OF \{since_year:[2005]\}]->(MarcosNode)\
+CREATE (JacoboNode)-[:IS_FRIEND_OF \{since_year:[2007]\}]->(PabloNode) ,(PabloNode)-[:IS_FRIEND_OF \{since_year:[2007]\}]->(JacoboNode)\
+CREATE (JacoboNode)-[:IS_FRIEND_OF \{since_year:[2007]\}]->(AnnunziataNode), (AnnunziataNode)-[:IS_FRIEND_OF \{since_year:[2007]\}]->(JacoboNode)\
+CREATE (JacoboNode)-[:IS_FRIEND_OF \{since_year:[2007]\}]->(JavierNode), (JavierNode)-[:IS_FRIEND_OF \{since_year:[2007]\}]->(JacoboNode)\
+CREATE (JacoboNode)-[:IS_FRIEND_OF \{since_year:[2007]\}]->(MarcosNode) ,(MarcosNode)-[:IS_FRIEND_OF \{since_year:[2007]\}]->(JacoboNode)\
+CREATE (AnnunziataNode)-[:IS_FRIEND_OF \{since_year:[2015]\}]->(YagoNode), (YagoNode)-[:IS_FRIEND_OF \{since_year:[2015]\}]->(AnnunziataNode)\
+CREATE (AnnunziataNode)-[:IS_FRIEND_OF \{since_year:[2015]\}]->(JimenaNode), (JimenaNode)-[:IS_FRIEND_OF \{since_year:[2015]\}]->(AnnunziataNode)\
+CREATE (AnnunziataNode)-[:IS_FRIEND_OF \{since_year:[2015]\}]->(PabloNode),(PabloNode)-[:IS_FRIEND_OF \{since_year:[2015]\}]->(AnnunziataNode)\
+CREATE (BeltranNode)-[:IS_FRIEND_OF \{since_year:[2020]\}]->(JavierNode), (JavierNode)-[:IS_FRIEND_OF \{since_year:[2020]\}]->(BeltranNode)\
+CREATE (BeltranNode)-[:IS_FRIEND_OF \{since_year:[2020]\}]->(AnnunziataNode) ,(JavierNode)-[:IS_FRIEND_OF \{since_year:[2020]\}]->(BeltranNode)\
+CREATE (BeltranNode)-[:IS_FRIEND_OF \{since_year:[2010]\}]->(MarcosNode), (MarcosNode)-[:IS_FRIEND_OF \{since_year:[2010]\}]->(BeltranNode)\
+CREATE (BeltranNode)-[:IS_FRIEND_OF \{since_year:[2010]\}]->(MartaNode) ,(MarcosNode)-[:IS_FRIEND_OF \{since_year:[2010]\}]->(BeltranNode)\
+CREATE (InesNode)-[:IS_FRIEND_OF \{since_year:[2007]\}]->(EvaNode), (EvaNode)-[:IS_FRIEND_OF \{since_year:[2007]\}]->(InesNode)\
+CREATE (InesNode)-[:IS_FRIEND_OF \{since_year:[2020]\}]->(JavierNode), (JavierNode)-[:IS_FRIEND_OF \{since_year:[2020]\}]->(InesNode)\
+CREATE (CeliaNode)-[:IS_FRIEND_OF \{since_year:[2012]\}]->(JimenaNode) ,(JimenaNode)-[:IS_FRIEND_OF \{since_year:[2012]\}]->(CeliaNode)\
+CREATE (CeliaNode)-[:IS_FRIEND_OF \{since_year:[2012]\}]->(AnnunziataNode), (AnnunziataNode)-[:IS_FRIEND_OF \{since_year:[2012]\}]->(CeliaNode)\
+CREATE (CeliaNode)-[:IS_FRIEND_OF \{since_year:[2012]\}]->(SofiaNode), (SofiaNode)-[:IS_FRIEND_OF \{since_year:[2012]\}]->(CeliaNode)\
+CREATE (SofiaNode)-[:IS_FRIEND_OF \{since_year:[2015]\}]->(AnnunziataNode), (AnnunziataNode)-[:IS_FRIEND_OF \{since_year:[2015]\}]->(SofiaNode)\
+CREATE (SofiaNode)-[:IS_FRIEND_OF \{since_year:[2015]\}]->(YagoNode), (YagoNode)-[:IS_FRIEND_OF \{since_year:[2015]\}]->(SofiaNode)\
+CREATE (JesusNode)-[:IS_FRIEND_OF \{since_year:[2005]\}]->(AdolfoNode), (AdolfoNode)-[:IS_FRIEND_OF \{since_year:[2005]\}]->(JesusNode)\
+CREATE (JesusNode)-[:IS_FRIEND_OF \{since_year:[2005]\}]->(PabloNode), (PabloNode)-[:IS_FRIEND_OF \{since_year:[2005]\}]->(JesusNode)\
+CREATE (JesusNode)-[:IS_FRIEND_OF \{since_year:[2005]\}]->(AnnunNode) ,(AnnunNode)-[:IS_FRIEND_OF \{since_year:[2005]\}]->(JesusNode)\
+CREATE (JesusNode)-[:IS_FRIEND_OF \{since_year:[2005]\}]->(MTeresaNode), (MTeresaNode)-[:IS_FRIEND_OF \{since_year:[2005]\}]->(JesusNode)\
+CREATE (MTeresaNode)-[:IS_FRIEND_OF \{since_year:[2005]\}]->(PabloNode), (PabloNode)-[:IS_FRIEND_OF \{since_year:[2005]\}]->(MTeresaNode)\
+CREATE (MTeresaNode)-[:IS_FRIEND_OF \{since_year:[2005]\}]->(AnnunNode) ,(AnnunNode)-[:IS_FRIEND_OF \{since_year:[2005]\}]->(MTeresaNode)\
+CREATE (MTeresaNode)-[:IS_FRIEND_OF \{since_year:[2005]\}]->(AdolfoNode), (AdolfoNode)-[:IS_FRIEND_OF \{since_year:[2005]\}]->(MTeresaNode)\
+CREATE (PabloNode)-[:IS_FRIEND_OF \{since_year:[2010]\}]->(MarcosNode) ,(MarcosNode)-[:IS_FRIEND_OF \{since_year:[2010]\}]->(PabloNode)\
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\f0\fs26 \cf2 \kerning1\expnd0\expndtw0 \
+\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1\fs24 \cf2 \expnd0\expndtw0\kerning0
+#RELATIONSHIP 
+\f0\fs26 \kerning1\expnd0\expndtw0 NOVEL_READ_BY (property: how many days did it take)\
+\pard\pardeftab560\slleading20\partightenfactor0
+\cf2 CREATE (novel1)-[:NOVEL_READ_BY\{days:[20]\}]->(AnnunziataNode)\
+CREATE (novel1)-[:NOVEL_READ_BY\{days:[30]\}]->(SofiaNode)\
+CREATE (novel1)-[:NOVEL_READ_BY\{days:[20]\}]->(JimenaNode)\
+CREATE (novel2)-[:NOVEL_READ_BY\{days:[30]\}]->(AnnunziataNode)\
+CREATE (novel3)-[:NOVEL_READ_BY\{days:[10]\}]->(MartaNode)\
+CREATE (novel3)-[:NOVEL_READ_BY\{days:[20]\}]->(MartsNode)\
+CREATE (novel4)-[:NOVEL_READ_BY\{days:[40]\}]->(BeltranNode)\
+CREATE (novel6)-[:NOVEL_READ_BY\{days:[20]\}]->(JesusNode)\
+CREATE (novel7)-[:NOVEL_READ_BY\{days:[35]\}]->(InesNode)\
+CREATE (novel8)-[:NOVEL_READ_BY\{days:[20]\}]->(JacoboNode)\
+CREATE (novel8)-[:NOVEL_READ_BY\{days:[40]\}]->(PabloNode)\
+CREATE (novel8)-[:NOVEL_READ_BY\{days:[20]\}]->(MarcosNode)\
+CREATE (novel9)-[:NOVEL_READ_BY\{days:[35]\}]->(EduardoNode)\
+CREATE (novel10)-[:NOVEL_READ_BY\{days:[20]\}]->(MTeresaNode)\
+CREATE (novel11)-[:NOVEL_READ_BY\{days:[30]\}]->(AnnunziataNode)\
+CREATE (novel11)-[:NOVEL_READ_BY\{days:[40]\}]->(AnnunziataNode)\
+CREATE (novel13)-[:NOVEL_READ_BY\{days:[20]\}]->(MartaNode)\
+CREATE (novel14)-[:NOVEL_READ_BY\{days:[10]\}]->(BeltranNode)\
+\
+\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1\fs24 \cf2 \expnd0\expndtw0\kerning0
+#RELATIONSHIP 
+\f0\fs26 \kerning1\expnd0\expndtw0 NOVEL_WRITTEN_BY (property: year)\
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs24 \cf2 \expnd0\expndtw0\kerning0
+CREATE (novel1)-[: NOVEL_WRITTEN_BY\{method:['computer']\}]->(authorJD)\
+CREATE (novel2)-[: NOVEL_WRITTEN_BY\{method:['computer']\}]->(authorJD)\
+CREATE (novel3)-[: NOVEL_WRITTEN_BY\{method:['paper']\}]->(authorVR)\
+CREATE (novel4)-[: NOVEL_WRITTEN_BY\{method:['computer']\}]->(authorVR)\
+CREATE (novel5)-[: NOVEL_WRITTEN_BY\{method:['paper']\}]->(authorMDe)\
+CREATE (novel6)-[: NOVEL_WRITTEN_BY\{method:['paper']\}]->(authorMDe)\
+CREATE (novel7)-[: NOVEL_WRITTEN_BY\{method:['computer']\}]->(authorVR)\
+CREATE (novel8)-[: NOVEL_WRITTEN_BY\{method:['paper']\}]->(authorMD)\
+CREATE (novel9)-[: NOVEL_WRITTEN_BY\{method:['paper']\}]->(authorMD)\
+CREATE (novel10)-[: NOVEL_WRITTEN_BY\{method:['computer']\}]->(authorMD)\
+CREATE (novel11)-[: NOVEL_WRITTEN_BY\{method:['paper']\}]->(authorMD)\
+CREATE (novel12)-[: NOVEL_WRITTEN_BY\{method:['paper']\}]->(authorJD)\
+CREATE (novel13)-[: NOVEL_WRITTEN_BY\{method:['computer']\}]->(authorMDe)\
+CREATE (novel14)-[: NOVEL_WRITTEN_BY\{method:['paper']\}]->(authorMDe)\
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\f0\fs26 \cf2 \kerning1\expnd0\expndtw0 \
+\
+\
+\
+\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1\fs24 \cf2 \expnd0\expndtw0\kerning0
+#RELATIONSHIP 
+\f0\fs26 \kerning1\expnd0\expndtw0 NOVEL_RECOMMENDED_BY (property: stars)\
+\pard\pardeftab560\slleading20\partightenfactor0
+\cf2 CREATE (novel1)-[: NOVEL_RECOMMENDED_BY\{stars:[2]\}]->(AnnunziataNode)\
+CREATE (novel1)-[: NOVEL_RECOMMENDED_BY\{stars:[1]\}]->(SofiaNode)\
+CREATE (novel2)-[: NOVEL_RECOMMENDED_BY\{stars:[2]\}]->(
+\f1\fs24 \expnd0\expndtw0\kerning0
+JacoboNode
+\f0\fs26 \kerning1\expnd0\expndtw0 )\
+CREATE (novel2)-[: NOVEL_RECOMMENDED_BY\{stars:[3]\}]->(PabloNode)\
+CREATE (novel3)-[: NOVEL_RECOMMENDED_BY\{stars:[4]\}]->(
+\f1\fs24 \expnd0\expndtw0\kerning0
+BeltranNode
+\f0\fs26 \kerning1\expnd0\expndtw0 )\
+CREATE (novel4)-[: NOVEL_RECOMMENDED_BY\{stars:[5]\}]->(AnnunziataNode)\
+CREATE (novel4)-[: NOVEL_RECOMMENDED_BY\{stars:[4]\}]->(
+\f1\fs24 \expnd0\expndtw0\kerning0
+CeliaNode
+\f0\fs26 \kerning1\expnd0\expndtw0 )\
+CREATE (novel4)-[: NOVEL_RECOMMENDED_BY\{stars:[3]\}]->(
+\f1\fs24 \expnd0\expndtw0\kerning0
+AdolfoNode
+\f0\fs26 \kerning1\expnd0\expndtw0 )\
+CREATE (novel5)-[: NOVEL_RECOMMENDED_BY\{stars:[2]\}]->(
+\f1\fs24 \expnd0\expndtw0\kerning0
+AnnunNode
+\f0\fs26 \kerning1\expnd0\expndtw0 )\
+CREATE (novel6)-[: NOVEL_RECOMMENDED_BY\{stars:[1]\}]->(PabloNode)\
+CREATE (novel6)-[: NOVEL_RECOMMENDED_BY\{stars:[2]\}]->(JesusNode)\
+CREATE (novel7)-[: NOVEL_RECOMMENDED_BY\{stars:[3]\}]->(MarcosNode)\
+CREATE (novel8)-[: NOVEL_RECOMMENDED_BY\{stars:[4]\}]->(
+\f1\fs24 \expnd0\expndtw0\kerning0
+EduardoNode
+\f0\fs26 \kerning1\expnd0\expndtw0 )\
+CREATE (novel9)-[: NOVEL_RECOMMENDED_BY\{stars:[5]\}]->(AnnunziataNode)\
+CREATE (novel9)-[: NOVEL_RECOMMENDED_BY\{stars:[4]\}]->(
+\f1\fs24 \expnd0\expndtw0\kerning0
+AdolfoNode
+\f0\fs26 \kerning1\expnd0\expndtw0 )\
+CREATE (novel9)-[: NOVEL_RECOMMENDED_BY\{stars:[3]\}]->(
+\f1\fs24 \expnd0\expndtw0\kerning0
+JacoboNode
+\f0\fs26 \kerning1\expnd0\expndtw0 )\
+CREATE (novel9)-[: NOVEL_RECOMMENDED_BY\{stars:[2]\}]->(MartaNode)\
+CREATE (novel10)-[: NOVEL_RECOMMENDED_BY\{stars:[1]\}]->(SofiaNode)\
+CREATE (novel10)-[: NOVEL_RECOMMENDED_BY\{stars:[2]\}]->(JesusNode)\
+CREATE (novel11)-[: NOVEL_RECOMMENDED_BY\{stars:[3]\}]->(
+\f1\fs24 \expnd0\expndtw0\kerning0
+GraciaNode
+\f0\fs26 \kerning1\expnd0\expndtw0 )\
+CREATE (novel12)-[: NOVEL_RECOMMENDED_BY\{stars:[4]\}]->(EduardoNode)\
+CREATE (novel12)-[: NOVEL_RECOMMENDED_BY\{stars:[5]\}]->(JimenaNode)\
+CREATE (novel13)-[: NOVEL_RECOMMENDED_BY\{stars:[4]\}]->(
+\f1\fs24 \expnd0\expndtw0\kerning0
+CeliaNode
+\f0\fs26 \kerning1\expnd0\expndtw0 )\
+CREATE (novel14)-[: NOVEL_RECOMMENDED_BY\{stars:[3]\}]->(
+\f1\fs24 \expnd0\expndtw0\kerning0
+CeliaNode
+\f0\fs26 \kerning1\expnd0\expndtw0 )\
+CREATE (novel14)-[: NOVEL_RECOMMENDED_BY\{stars:[2]\}]->(
+\f1\fs24 \expnd0\expndtw0\kerning0
+MTeresaNode
+\f0\fs26 \kerning1\expnd0\expndtw0 )\
+CREATE (novel14)-[: NOVEL_RECOMMENDED_BY\{stars:[1]\}]->(MartaNode)\
+CREATE (novel5)-[: NOVEL_RECOMMENDED_BY\{stars:[2]\}]->(
+\f1\fs24 \expnd0\expndtw0\kerning0
+EvaNode
+\f0\fs26 \kerning1\expnd0\expndtw0 )\
+CREATE (novel6)-[: NOVEL_RECOMMENDED_BY\{stars:[3]\}]->(JesusNode)\
+CREATE (novel6)-[: NOVEL_RECOMMENDED_BY\{stars:[4]\}]->(AnnunziataNode)\
+CREATE (novel7)-[: NOVEL_RECOMMENDED_BY\{stars:[5]\}]->(
+\f1\fs24 \expnd0\expndtw0\kerning0
+EvaNode
+\f0\fs26 \kerning1\expnd0\expndtw0 )\
+\
+\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1\fs24 \cf2 \expnd0\expndtw0\kerning0
+#RELATIONSHIP 
+\f0\fs26 \kerning1\expnd0\expndtw0 AUTHOR_RECOMMENDED_BY (property: how_much)\
+\pard\pardeftab560\slleading20\partightenfactor0
+\cf2 CREATE (authorMD)-[: AUTHOR_RECOMMENDED_BY\{how_much:['very much']\}]->(AnnunziataNode)\
+CREATE (authorMD)-[: AUTHOR_RECOMMENDED_BY\{how_much:['not much']\}]->(
+\f1\fs24 \expnd0\expndtw0\kerning0
+EvaNode
+\f0\fs26 \kerning1\expnd0\expndtw0 )\
+CREATE (authorMD)-[: AUTHOR_RECOMMENDED_BY\{how_much:['it is fine']\}]->(
+\f1\fs24 \expnd0\expndtw0\kerning0
+EduardoNode
+\f0\fs26 \kerning1\expnd0\expndtw0 )\
+CREATE (authorJD)-[: AUTHOR_RECOMMENDED_BY\{how_much:['very much']\}]->(
+\f1\fs24 \expnd0\expndtw0\kerning0
+GraciaNode
+\f0\fs26 \kerning1\expnd0\expndtw0 )\
+CREATE (authorJD)-[: AUTHOR_RECOMMENDED_BY\{how_much:['not much']\}]->(SofiaNode)\
+CREATE (authorJD)-[: AUTHOR_RECOMMENDED_BY\{how_much:['it is fine']\}]->(
+\f1\fs24 \expnd0\expndtw0\kerning0
+BeltranNode
+\f0\fs26 \kerning1\expnd0\expndtw0 )\
+CREATE (authorVR)-[: AUTHOR_RECOMMENDED_BY\{how_much:['very much']\}]->(
+\f1\fs24 \expnd0\expndtw0\kerning0
+JacoboNode
+\f0\fs26 \kerning1\expnd0\expndtw0 )\
+CREATE (authorVR)-[: AUTHOR_RECOMMENDED_BY\{how_much:['not much']\}]->(
+\f1\fs24 \expnd0\expndtw0\kerning0
+AnnunNode
+\f0\fs26 \kerning1\expnd0\expndtw0 )\
+CREATE (authorVR)-[: AUTHOR_RECOMMENDED_BY\{how_much:['it is fine']\}]->(EduardoNode)\
+CREATE (authorMDe)-[: AUTHOR_RECOMMENDED_BY\{how_much:['very much']\}]->(
+\f1\fs24 \expnd0\expndtw0\kerning0
+MTeresaNode
+\f0\fs26 \kerning1\expnd0\expndtw0 )\
+CREATE (authorMDe)-[: AUTHOR_RECOMMENDED_BY\{how_much:['it is fine']\}]->(PabloNode)\
+CREATE (authorMDe)-[: AUTHOR_RECOMMENDED_BY\{how_much:['not much']\}]->(JesusNode)\
+\
+\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1\fs24 \cf2 \expnd0\expndtw0\kerning0
+#RELATIONSHIP 
+\f0\fs26 \kerning1\expnd0\expndtw0  FOLLOWS (property: for how long)\
+\pard\pardeftab560\slleading20\partightenfactor0
+\cf2 CREATE (novel1)-[: FOLLOWS\{howLong:[20]\}]->(AnnunziataNode)\
+CREATE (novel1)-[: FOLLOWS\{howLong:[20]\}]->(AnnunziataNode)\
+CREATE (novel1)-[: FOLLOWS\{howLong:[20]\}]->(AnnunziataNode)\
+CREATE (novel1)-[: FOLLOWS\{howLong:[20]\}]->(AnnunziataNode)\
+CREATE (novel1)-[: FOLLOWS\{howLong:[20]\}]->(AnnunziataNode)\
+CREATE (novel1)-[: FOLLOWS\{howLong:[20]\}]->(AnnunziataNode)\
+CREATE (novel1)-[: FOLLOWS\{howLong:[20]\}]->(AnnunziataNode)\
+CREATE (novel1)-[: FOLLOWS\{howLong:[20]\}]->(AnnunziataNode)\
+CREATE (novel1)-[: FOLLOWS\{howLong:[20]\}]->(AnnunziataNode)\
+\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1\fs24 \cf2 \expnd0\expndtw0\kerning0
+#RELATIONSHIP 
+\f0\fs26 \kerning1\expnd0\expndtw0   (property: for how long)\
+\pard\pardeftab560\slleading20\partightenfactor0
+\cf2 CREATE (novel1)-[: AUTHOR_RECOMMENDED_BY\{howLong:[20]\}]->(AnnunziataNode)\
+CREATE (novel1)-[: AUTHOR_RECOMMENDED_BY\{howLong:[20]\}]->(AnnunziataNode)\
+CREATE (novel1)-[: AUTHOR_RECOMMENDED_BY\{howLong:[20]\}]->(AnnunziataNode)\
+CREATE (novel1)-[: AUTHOR_RECOMMENDED_BY\{howLong:[20]\}]->(AnnunziataNode)\
+CREATE (novel1)-[: AUTHOR_RECOMMENDED_BY\{howLong:[20]\}]->(AnnunziataNode)\
+CREATE (novel1)-[: AUTHOR_RECOMMENDED_BY\{howLong:[20]\}]->(AnnunziataNode)\
+CREATE (novel1)-[: AUTHOR_RECOMMENDED_BY\{howLong:[20]\}]->(AnnunziataNode)\
+CREATE (novel1)-[: AUTHOR_RECOMMENDED_BY\{howLong:[20]\}]->(AnnunziataNode)\
+CREATE (novel1)-[: AUTHOR_RECOMMENDED_BY\{howLong:[20]\}]->(AnnunziataNode)\
+\
+\
+\
+#QUERY 1: 
+\f1\fs29\fsmilli14667 \expnd0\expndtw0\kerning0
+Recover all the people on the network who recommend the writer "Maria Due\'f1as". \
+\
+MATCH (:writer\{
+\fs24 name: 'Maria Due\'f1as'\}
+\fs29\fsmilli14667 )-[: 
+\f0\fs26 \kerning1\expnd0\expndtw0 AUTHOR_RECOMMENDED_BY]->(n:person)\
+RETURN n
+\fs42 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\partightenfactor0
+
+\f2\fs28 \cf2 \uc0\u9554 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9557 \
+\uc0\u9474 "n"                                                   \u9474 \
+\uc0\u9566 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9569 \
+\uc0\u9474 \{"nick":"Evi","name":"Eva","country":"Rusia"\}         \u9474 \
+\uc0\u9500 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9508 \
+\uc0\u9474 \{"nick":"Tatis","name":"Annunziata","country":"Spain"\}\u9474 \
+\uc0\u9500 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9508 \
+\uc0\u9474 \{"nick":"Edu","name":"Eduardo","country":"Albania"\}   \u9474 \
+\uc0\u9492 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9496 \
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\f1\fs29\fsmilli14667 \cf2 \
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\f0\fs26 \cf2 \kerning1\expnd0\expndtw0 #QUERY 2: 
+\f1\fs29\fsmilli14667 \expnd0\expndtw0\kerning0
+Recover the names of all people with her/his number of friends. 
+\fs24 \
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\fs29\fsmilli14667 \cf2 \
+MATCH (p:person)-[: 
+\fs24 IS_FRIEND_OF
+\f0\fs26 \kerning1\expnd0\expndtw0 ]->(n:person)\
+\
+RETURN 
+\fs42 \expnd0\expndtw0\kerning0
+\
+
+\f1\fs29\fsmilli14667 \
+\
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\f0\fs26 \cf2 \kerning1\expnd0\expndtw0 #QUERY 3: 
+\f1\fs29\fsmilli14667 \expnd0\expndtw0\kerning0
+Recover all novels recommended by more than two people. 
+\fs24 \
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\fs29\fsmilli14667 \cf2 \
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\f0\fs26 \cf2 \kerning1\expnd0\expndtw0 #QUERY 4: 
+\f1\fs29\fsmilli14667 \expnd0\expndtw0\kerning0
+Recover all author recommended by people from Spain  . \
+MATCH (w:writer)-[: 
+\f0\fs26 \kerning1\expnd0\expndtw0 AUTHOR_RECOMMENDED_BY]->(:person\{
+\f1\fs24 \expnd0\expndtw0\kerning0
+country: 'Spain'\}
+\f0\fs26 \kerning1\expnd0\expndtw0 )\
+RETURN w\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f2\fs28 \cf2 \expnd0\expndtw0\kerning0
+\uc0\u9554 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9557 \
+\uc0\u9474 "w"                                \u9474 \
+\uc0\u9566 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9569 \
+\uc0\u9474 \{"name":"Maria Due\'f1as","age":"57"\} \u9474 \
+\uc0\u9500 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9508 \
+\uc0\u9474 \{"name":"Veronica Roth","age":"33"\}\u9474 \
+\uc0\u9492 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9496 \
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\f1\fs29\fsmilli14667 \cf2 \
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\f0\fs26 \cf2 \kerning1\expnd0\expndtw0 #QUERY 5: 
+\f1\fs29\fsmilli14667 \expnd0\expndtw0\kerning0
+Recover all the titles written by authors older than 50 . \
+\
+MATCH (n:novel)-[: 
+\fs24 NOVEL_WRITTEN_BY
+\f0\fs26 \kerning1\expnd0\expndtw0 ]->(w:writer)\
+WHERE 	w.age>'50'
+\f1\fs24 \expnd0\expndtw0\kerning0
+\
+
+\f0\fs26 \kerning1\expnd0\expndtw0 RETURN n.title\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f2\fs28 \cf2 \expnd0\expndtw0\kerning0
+\uc0\u9554 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9557 \
+\uc0\u9474 "n.title"                 \u9474 \
+\uc0\u9566 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9569 \
+\uc0\u9474 "La templanza"            \u9474 \
+\uc0\u9500 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9508 \
+\uc0\u9474 "El tiempo entre costuras"\u9474 \
+\uc0\u9500 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9508 \
+\uc0\u9474 "Sira"                    \u9474 \
+\uc0\u9500 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9508 \
+\uc0\u9474 "Misi\'f3n Olvido"           \u9474 \
+\uc0\u9500 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9508 \
+\uc0\u9474 "Blackmoore"              \u9474 \
+\uc0\u9500 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9508 \
+\uc0\u9474 "Come, sweet home"        \u9474 \
+\uc0\u9500 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9508 \
+\uc0\u9474 "Edenbrooke"              \u9474 \
+\uc0\u9492 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9496 \
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\f1\fs29\fsmilli14667 \cf2 \
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\f0\fs26 \cf2 \kerning1\expnd0\expndtw0 #QUERY 6: 
+\f1\fs29\fsmilli14667 \expnd0\expndtw0\kerning0
+Recover the names of all people . \
+
+\fs24 \
+
+\f0\fs26 \kerning1\expnd0\expndtw0 \
+\
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs24 \cf4 \cb5 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 MartaNode\cf7 \strokec7 :\cf6 \strokec6  person \cf7 \strokec7 \{\cf6 \strokec6 name\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 'Marta'\cf7 \strokec7 ,\cf6 \strokec6  nick\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 'Martita'\cf7 \strokec7 ,\cf6 \strokec6  country\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 'Spain'\cf7 \strokec7 \})\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 AnnunziataNode\cf7 \strokec7 :\cf6 \strokec6  person \cf7 \strokec7 \{\cf6 \strokec6 name\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 'Annunziata'\cf7 \strokec7 ,\cf6 \strokec6  nick\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 'Tatis'\cf7 \strokec7 ,\cf6 \strokec6  country\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 'Spain'\cf7 \strokec7 \})\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 EduardoNode\cf7 \strokec7 :\cf6 \strokec6  person \cf7 \strokec7 \{\cf6 \strokec6 name\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 'Eduardo'\cf7 \strokec7 ,\cf6 \strokec6  nick\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 'Edu'\cf7 \strokec7 ,\cf6 \strokec6  country\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 'Spain'\cf7 \strokec7 \})\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 MarcosNode\cf7 \strokec7 :\cf6 \strokec6  person \cf7 \strokec7 \{\cf6 \strokec6 name\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 'Marcos'\cf7 \strokec7 ,\cf6 \strokec6  nick\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 'Marc'\cf7 \strokec7 ,\cf6 \strokec6  country\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 'England'\cf7 \strokec7 \})\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 GraciaNode\cf7 \strokec7 :\cf6 \strokec6  person \cf7 \strokec7 \{\cf6 \strokec6 name\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 'Gracia'\cf7 \strokec7 ,\cf6 \strokec6  nick\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 'Gra'\cf7 \strokec7 ,\cf6 \strokec6  country\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 'Spain'\cf7 \strokec7 \})\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 JacoboNode\cf7 \strokec7 :\cf6 \strokec6  person \cf7 \strokec7 \{\cf6 \strokec6 name\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 'Jacobo'\cf7 \strokec7 ,\cf6 \strokec6  nick\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 'Jaco'\cf7 \strokec7 ,\cf6 \strokec6  country\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 'Spain'\cf7 \strokec7 \})\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 MartsNode\cf7 \strokec7 :\cf6 \strokec6  person \cf7 \strokec7 \{\cf6 \strokec6 name\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 'Marta'\cf7 \strokec7 ,\cf6 \strokec6  nick\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 'Marts'\cf7 \strokec7 ,\cf6 \strokec6  country\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 'Spain'\cf7 \strokec7 \})\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 BeltranNode\cf7 \strokec7 :\cf6 \strokec6  person \cf7 \strokec7 \{\cf6 \strokec6 name\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 'Beltran'\cf7 \strokec7 ,\cf6 \strokec6  nick\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 'Belval'\cf7 \strokec7 ,\cf6 \strokec6  country\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 'Spain'\cf7 \strokec7 \})\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 PabloNode\cf7 \strokec7 :\cf6 \strokec6  person \cf7 \strokec7 \{\cf6 \strokec6 name\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 'Pablo'\cf7 \strokec7 ,\cf6 \strokec6  nick\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 'Pabli'\cf7 \strokec7 ,\cf6 \strokec6  country\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 'Spain'\cf7 \strokec7 \})\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 InesNode\cf7 \strokec7 :\cf6 \strokec6  person \cf7 \strokec7 \{\cf6 \strokec6 name\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 'Ines'\cf7 \strokec7 ,\cf6 \strokec6  nick\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 'Nesi'\cf7 \strokec7 ,\cf6 \strokec6  country\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 'England'\cf7 \strokec7 \})\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 CeliaNode\cf7 \strokec7 :\cf6 \strokec6  person \cf7 \strokec7 \{\cf6 \strokec6 name\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 'Celia'\cf7 \strokec7 ,\cf6 \strokec6  nick\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 'Celi'\cf7 \strokec7 ,\cf6 \strokec6  country\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 'Mexico'\cf7 \strokec7 \})\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 JimenaNode\cf7 \strokec7 :\cf6 \strokec6  person \cf7 \strokec7 \{\cf6 \strokec6 name\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 'Jimena'\cf7 \strokec7 ,\cf6 \strokec6  nick\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 'Jime'\cf7 \strokec7 ,\cf6 \strokec6  country\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 'Mexico'\cf7 \strokec7 \})\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 EvaNode\cf7 \strokec7 :\cf6 \strokec6  person \cf7 \strokec7 \{\cf6 \strokec6 name\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 'Eva'\cf7 \strokec7 ,\cf6 \strokec6  nick\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 'Evi'\cf7 \strokec7 ,\cf6 \strokec6  country\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 'Spain'\cf7 \strokec7 \})\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 SofiaNode\cf7 \strokec7 :\cf6 \strokec6  person \cf7 \strokec7 \{\cf6 \strokec6 name\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 'Sofia'\cf7 \strokec7 ,\cf6 \strokec6  nick\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 'Sofi'\cf7 \strokec7 ,\cf6 \strokec6  country\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 'England'\cf7 \strokec7 \})\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 YagoNode\cf7 \strokec7 :\cf6 \strokec6  person \cf7 \strokec7 \{\cf6 \strokec6 name\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 'Yago'\cf7 \strokec7 ,\cf6 \strokec6  nick\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 'Yg'\cf7 \strokec7 ,\cf6 \strokec6  country\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 'Spain'\cf7 \strokec7 \})\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 JesusNode\cf7 \strokec7 :\cf6 \strokec6  person \cf7 \strokec7 \{\cf6 \strokec6 name\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 'Jesus'\cf7 \strokec7 ,\cf6 \strokec6  nick\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 'J'\cf7 \strokec7 ,\cf6 \strokec6  country\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 'England'\cf7 \strokec7 \})\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 AnnunNode\cf7 \strokec7 :\cf6 \strokec6  person \cf7 \strokec7 \{\cf6 \strokec6 name\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 'Annunziata'\cf7 \strokec7 ,\cf6 \strokec6  nick\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 'Annun'\cf7 \strokec7 ,\cf6 \strokec6  country\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 'Mexico'\cf7 \strokec7 \})\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 JavierNode\cf7 \strokec7 :\cf6 \strokec6  person \cf7 \strokec7 \{\cf6 \strokec6 name\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 'Javier'\cf7 \strokec7 ,\cf6 \strokec6  nick\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 'Javi'\cf7 \strokec7 ,\cf6 \strokec6  country\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 'Mexico'\cf7 \strokec7 \})\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 AdolfoNode\cf7 \strokec7 :\cf6 \strokec6  person \cf7 \strokec7 \{\cf6 \strokec6 name\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 'Adolfo'\cf7 \strokec7 ,\cf6 \strokec6  nick\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 'Ado'\cf7 \strokec7 ,\cf6 \strokec6  country\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 'England'\cf7 \strokec7 \})\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 MTeresaNode\cf7 \strokec7 :\cf6 \strokec6  person \cf7 \strokec7 \{\cf6 \strokec6 name\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 'MTeresa'\cf7 \strokec7 ,\cf6 \strokec6  nick\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 'Mayte'\cf7 \strokec7 ,\cf6 \strokec6  country\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 'England'\cf7 \strokec7 \})\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 JorgeNode\cf7 \strokec7 :\cf6 \strokec6  person \cf7 \strokec7 \{\cf6 \strokec6 name\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 'Jorge'\cf7 \strokec7 ,\cf6 \strokec6  nick\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 'George'\cf7 \strokec7 ,\cf6 \strokec6  country\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 'Mexico'\cf7 \strokec7 \})\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 novel1\cf7 \strokec7 :\cf6 \strokec6  novel \cf7 \strokec7 \{\cf6 \strokec6 title\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 'Edenbrooke'\cf7 \strokec7 ,\cf6 \strokec6  date\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 '2012'\cf7 \strokec7 ,\cf6 \strokec6  genre\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 'romance'\cf7 \strokec7 \})\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 novel2\cf7 \strokec7 :\cf6 \strokec6  novel \cf7 \strokec7 \{\cf6 \strokec6 title\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 'Blackmoore'\cf7 \strokec7 ,\cf6 \strokec6  date\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 '2013'\cf7 \strokec7 ,\cf6 \strokec6  genre\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 'romance'\cf7 \strokec7 \})\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 novel3\cf7 \strokec7 :\cf6 \strokec6  novel \cf7 \strokec7 \{\cf6 \strokec6 title\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 'Divergent'\cf7 \strokec7 ,\cf6 \strokec6  date\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 '2015'\cf7 \strokec7 ,\cf6 \strokec6  genre\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 'adventure'\cf7 \strokec7 \})\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 novel4\cf7 \strokec7 :\cf6 \strokec6  novel \cf7 \strokec7 \{\cf6 \strokec6 title\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 'Insurgent'\cf7 \strokec7 ,\cf6 \strokec6  date\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 '2016'\cf7 \strokec7 ,\cf6 \strokec6  genre\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 'adventure'\cf7 \strokec7 \})\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 novel5\cf7 \strokec7 :\cf6 \strokec6  novel \cf7 \strokec7 \{\cf6 \strokec6 title\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 '5 horas con Mario'\cf7 \strokec7 ,\cf6 \strokec6  date\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 '1966'\cf7 \strokec7 ,\cf6 \strokec6  genre\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 'narrative'\cf7 \strokec7 \})\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 novel6\cf7 \strokec7 :\cf6 \strokec6  novel \cf7 \strokec7 \{\cf6 \strokec6 title\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 'El camino'\cf7 \strokec7 ,\cf6 \strokec6  date\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 '1950'\cf7 \strokec7 ,\cf6 \strokec6  genre\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 'narrative'\cf7 \strokec7 \})\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 novel7\cf7 \strokec7 :\cf6 \strokec6  novel \cf7 \strokec7 \{\cf6 \strokec6 title\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 'Allegiant'\cf7 \strokec7 ,\cf6 \strokec6  date\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 '2017'\cf7 \strokec7 ,\cf6 \strokec6  genre\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 'adventure'\cf7 \strokec7 \})\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 novel8\cf7 \strokec7 :\cf6 \strokec6  novel \cf7 \strokec7 \{\cf6 \strokec6 title\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 'El tiempo entre costuras'\cf7 \strokec7 ,\cf6 \strokec6  date\cf7 \strokec7 :\cf8 \strokec8 '2009'\cf7 \strokec7 ,\cf6 \strokec6  genre\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 'romance'\cf7 \strokec7 \})\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 novel9\cf7 \strokec7 :\cf6 \strokec6  novel \cf7 \strokec7 \{\cf6 \strokec6 title\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 'La templanza'\cf7 \strokec7 ,\cf6 \strokec6  date\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 '2015'\cf7 \strokec7 ,\cf6 \strokec6  genre\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 'fiction'\cf7 \strokec7 \})\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 novel10\cf7 \strokec7 :\cf6 \strokec6  novel \cf7 \strokec7 \{\cf6 \strokec6 title\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 'Misi\'f3n Olvido'\cf7 \strokec7 ,\cf6 \strokec6  date\cf7 \strokec7 :\cf8 \strokec8 '2012'\cf7 \strokec7 ,\cf6 \strokec6  genre\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 'fiction'\cf7 \strokec7 \})\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 novel11\cf7 \strokec7 :\cf6 \strokec6  novel \cf7 \strokec7 \{\cf6 \strokec6 title\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 'Sira'\cf7 \strokec7 ,\cf6 \strokec6  date\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 '2021'\cf7 \strokec7 ,\cf6 \strokec6  genre\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 'historic'\cf7 \strokec7 \})\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 novel12\cf7 \strokec7 :\cf6 \strokec6  novel \cf7 \strokec7 \{\cf6 \strokec6 title\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 'Come, sweet home'\cf7 \strokec7 ,\cf6 \strokec6  date\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 '2021'\cf7 \strokec7 ,\cf6 \strokec6  genre\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 'adventure'\cf7 \strokec7 \})\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 novel13\cf7 \strokec7 :\cf6 \strokec6  novel \cf7 \strokec7 \{\cf6 \strokec6 title\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 'Cartas de amor'\cf7 \strokec7 ,\cf6 \strokec6  date\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 '1983'\cf7 \strokec7 ,\cf6 \strokec6  genre\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 'romance'\cf7 \strokec7 \})\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 novel14\cf7 \strokec7 :\cf6 \strokec6  novel \cf7 \strokec7 \{\cf6 \strokec6 title\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 'Las ratas'\cf7 \strokec7 ,\cf6 \strokec6  date\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 '1962'\cf7 \strokec7 ,\cf6 \strokec6  genre\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 'historic'\cf7 \strokec7 \})\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 authorMD\cf7 \strokec7 :\cf6 \strokec6  writer \cf7 \strokec7 \{\cf6 \strokec6 name\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 'Maria Due\'f1as'\cf7 \strokec7 ,\cf6 \strokec6  age\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 '57'\cf7 \strokec7 \})\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 authorVR\cf7 \strokec7 :\cf6 \strokec6  writer \cf7 \strokec7 \{\cf6 \strokec6 name\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 'Veronica Roth'\cf7 \strokec7 ,\cf6 \strokec6  age\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 '33'\cf7 \strokec7 \})\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 authorMDe\cf7 \strokec7 :\cf6 \strokec6  writer \cf7 \strokec7 \{\cf6 \strokec6 name\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 'Miguel Delibes'\cf7 \strokec7 ,\cf6 \strokec6  age\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 '100'\cf7 \strokec7 \})\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 authorJD\cf7 \strokec7 :\cf6 \strokec6  writer \cf7 \strokec7 \{\cf6 \strokec6 name\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 'Julianne Donaldson'\cf7 \strokec7 ,\cf6 \strokec6  age\cf7 \strokec7 :\cf6 \strokec6  \cf8 \strokec8 '73'\cf7 \strokec7 \})\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 MartaNode\cf7 \strokec7 )-[:\cf6 \strokec6 IS_FRIEND_OF \cf7 \strokec7 \{\cf6 \strokec6 since_year\cf7 \strokec7 :[\cf10 \strokec10 2019\cf7 \strokec7 ]\}]->(\cf6 \strokec6 AnnunziataNode\cf7 \strokec7 ),\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 AnnunziataNode\cf7 \strokec7 )-[:\cf6 \strokec6 IS_FRIEND_OF \cf7 \strokec7 \{\cf6 \strokec6 since_year\cf7 \strokec7 :[\cf10 \strokec10 2019\cf7 \strokec7 ]\}]->(\cf6 \strokec6 MartaNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 MartaNode\cf7 \strokec7 )-[:\cf6 \strokec6 IS_FRIEND_OF \cf7 \strokec7 \{\cf6 \strokec6 since_year\cf7 \strokec7 :[\cf10 \strokec10 2007\cf7 \strokec7 ]\}]->(\cf6 \strokec6 EvaNode\cf7 \strokec7 ),\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 EvaNode\cf7 \strokec7 )-[:\cf6 \strokec6 IS_FRIEND_OF \cf7 \strokec7 \{\cf6 \strokec6 since_year\cf7 \strokec7 :[\cf10 \strokec10 2007\cf7 \strokec7 ]\}]->(\cf6 \strokec6 MartaNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 MartaNode\cf7 \strokec7 )-[:\cf6 \strokec6 IS_FRIEND_OF \cf7 \strokec7 \{\cf6 \strokec6 since_year\cf7 \strokec7 :[\cf10 \strokec10 2019\cf7 \strokec7 ]\}]->(\cf6 \strokec6 EduardoNode\cf7 \strokec7 ),\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 EduardoNode\cf7 \strokec7 )-[:\cf6 \strokec6 IS_FRIEND_OF \cf7 \strokec7 \{\cf6 \strokec6 since_year\cf7 \strokec7 :[\cf10 \strokec10 2019\cf7 \strokec7 ]\}]->(\cf6 \strokec6 MartaNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 MartaNode\cf7 \strokec7 )-[:\cf6 \strokec6 IS_FRIEND_OF \cf7 \strokec7 \{\cf6 \strokec6 since_year\cf7 \strokec7 :[\cf10 \strokec10 2019\cf7 \strokec7 ]\}]->(\cf6 \strokec6 MarcosNode\cf7 \strokec7 ),\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 MarcosNode\cf7 \strokec7 )-[:\cf6 \strokec6 IS_FRIEND_OF \cf7 \strokec7 \{\cf6 \strokec6 since_year\cf7 \strokec7 :[\cf10 \strokec10 2019\cf7 \strokec7 ]\}]->(\cf6 \strokec6 MartaNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 MartaNode\cf7 \strokec7 )-[:\cf6 \strokec6 IS_FRIEND_OF \cf7 \strokec7 \{\cf6 \strokec6 since_year\cf7 \strokec7 :[\cf10 \strokec10 2007\cf7 \strokec7 ]\}]->(\cf6 \strokec6 JacoboNode\cf7 \strokec7 ),\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 JacoboNode\cf7 \strokec7 )-[:\cf6 \strokec6 IS_FRIEND_OF \cf7 \strokec7 \{\cf6 \strokec6 since_year\cf7 \strokec7 :[\cf10 \strokec10 2007\cf7 \strokec7 ]\}]->(\cf6 \strokec6 MartaNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 MartaNode\cf7 \strokec7 )-[:\cf6 \strokec6 IS_FRIEND_OF \cf7 \strokec7 \{\cf6 \strokec6 since_year\cf7 \strokec7 :[\cf10 \strokec10 2019\cf7 \strokec7 ]\}]->(\cf6 \strokec6 GraciaNode\cf7 \strokec7 ),\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 GraciaNode\cf7 \strokec7 )-[:\cf6 \strokec6 IS_FRIEND_OF \cf7 \strokec7 \{\cf6 \strokec6 since_year\cf7 \strokec7 :[\cf10 \strokec10 2019\cf7 \strokec7 ]\}]->(\cf6 \strokec6 MartaNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 MartsNode\cf7 \strokec7 )-[:\cf6 \strokec6 IS_FRIEND_OF \cf7 \strokec7 \{\cf6 \strokec6 since_year\cf7 \strokec7 :[\cf10 \strokec10 2005\cf7 \strokec7 ]\}]->(\cf6 \strokec6 GraciaNode\cf7 \strokec7 ),\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 GraciaNode\cf7 \strokec7 )-[:\cf6 \strokec6 IS_FRIEND_OF \cf7 \strokec7 \{\cf6 \strokec6 since_year\cf7 \strokec7 :[\cf10 \strokec10 2005\cf7 \strokec7 ]\}]->(\cf6 \strokec6 MartsNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 MartsNode\cf7 \strokec7 )-[:\cf6 \strokec6 IS_FRIEND_OF \cf7 \strokec7 \{\cf6 \strokec6 since_year\cf7 \strokec7 :[\cf10 \strokec10 2005\cf7 \strokec7 ]\}]->(\cf6 \strokec6 JorgeNode\cf7 \strokec7 ),\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 JorgeNode\cf7 \strokec7 )-[:\cf6 \strokec6 IS_FRIEND_OF \cf7 \strokec7 \{\cf6 \strokec6 since_year\cf7 \strokec7 :[\cf10 \strokec10 2005\cf7 \strokec7 ]\}]->(\cf6 \strokec6 MartsNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 MartsNode\cf7 \strokec7 )-[:\cf6 \strokec6 IS_FRIEND_OF \cf7 \strokec7 \{\cf6 \strokec6 since_year\cf7 \strokec7 :[\cf10 \strokec10 2005\cf7 \strokec7 ]\}]->(\cf6 \strokec6 BeltranNode\cf7 \strokec7 ),\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 BeltranNode\cf7 \strokec7 )-[:\cf6 \strokec6 IS_FRIEND_OF \cf7 \strokec7 \{\cf6 \strokec6 since_year\cf7 \strokec7 :[\cf10 \strokec10 2005\cf7 \strokec7 ]\}]->(\cf6 \strokec6 MartsNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 MartsNode\cf7 \strokec7 )-[:\cf6 \strokec6 IS_FRIEND_OF \cf7 \strokec7 \{\cf6 \strokec6 since_year\cf7 \strokec7 :[\cf10 \strokec10 2005\cf7 \strokec7 ]\}]->(\cf6 \strokec6 PabloNode\cf7 \strokec7 ),\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 PabloNode\cf7 \strokec7 )-[:\cf6 \strokec6 IS_FRIEND_OF \cf7 \strokec7 \{\cf6 \strokec6 since_year\cf7 \strokec7 :[\cf10 \strokec10 2005\cf7 \strokec7 ]\}]->(\cf6 \strokec6 MartsNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 EduardoNode\cf7 \strokec7 )-[:\cf6 \strokec6 IS_FRIEND_OF \cf7 \strokec7 \{\cf6 \strokec6 since_year\cf7 \strokec7 :[\cf10 \strokec10 2010\cf7 \strokec7 ]\}]->(\cf6 \strokec6 MarcosNode\cf7 \strokec7 ),\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 MarcosNode\cf7 \strokec7 )-[:\cf6 \strokec6 IS_FRIEND_OF \cf7 \strokec7 \{\cf6 \strokec6 since_year\cf7 \strokec7 :[\cf10 \strokec10 2010\cf7 \strokec7 ]\}]->(\cf6 \strokec6 EduardoNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 MarcosNode\cf7 \strokec7 )-[:\cf6 \strokec6 IS_FRIEND_OF \cf7 \strokec7 \{\cf6 \strokec6 since_year\cf7 \strokec7 :[\cf10 \strokec10 2005\cf7 \strokec7 ]\}]->(\cf6 \strokec6 AnnunziataNode\cf7 \strokec7 ),\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 AnnunziataNode\cf7 \strokec7 )-[:\cf6 \strokec6 IS_FRIEND_OF \cf7 \strokec7 \{\cf6 \strokec6 since_year\cf7 \strokec7 :[\cf10 \strokec10 2005\cf7 \strokec7 ]\}]->(\cf6 \strokec6 MarcosNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 JacoboNode\cf7 \strokec7 )-[:\cf6 \strokec6 IS_FRIEND_OF \cf7 \strokec7 \{\cf6 \strokec6 since_year\cf7 \strokec7 :[\cf10 \strokec10 2007\cf7 \strokec7 ]\}]->(\cf6 \strokec6 PabloNode\cf7 \strokec7 )\cf6 \strokec6  \cf7 \strokec7 ,(\cf6 \strokec6 PabloNode\cf7 \strokec7 )-[:\cf6 \strokec6 IS_FRIEND_OF \cf7 \strokec7 \{\cf6 \strokec6 since_year\cf7 \strokec7 :[\cf10 \strokec10 2007\cf7 \strokec7 ]\}]->(\cf6 \strokec6 JacoboNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 JacoboNode\cf7 \strokec7 )-[:\cf6 \strokec6 IS_FRIEND_OF \cf7 \strokec7 \{\cf6 \strokec6 since_year\cf7 \strokec7 :[\cf10 \strokec10 2007\cf7 \strokec7 ]\}]->(\cf6 \strokec6 AnnunziataNode\cf7 \strokec7 ),\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 AnnunziataNode\cf7 \strokec7 )-[:\cf6 \strokec6 IS_FRIEND_OF \cf7 \strokec7 \{\cf6 \strokec6 since_year\cf7 \strokec7 :[\cf10 \strokec10 2007\cf7 \strokec7 ]\}]->(\cf6 \strokec6 JacoboNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 JacoboNode\cf7 \strokec7 )-[:\cf6 \strokec6 IS_FRIEND_OF \cf7 \strokec7 \{\cf6 \strokec6 since_year\cf7 \strokec7 :[\cf10 \strokec10 2007\cf7 \strokec7 ]\}]->(\cf6 \strokec6 JavierNode\cf7 \strokec7 ),\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 JavierNode\cf7 \strokec7 )-[:\cf6 \strokec6 IS_FRIEND_OF \cf7 \strokec7 \{\cf6 \strokec6 since_year\cf7 \strokec7 :[\cf10 \strokec10 2007\cf7 \strokec7 ]\}]->(\cf6 \strokec6 JacoboNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 JacoboNode\cf7 \strokec7 )-[:\cf6 \strokec6 IS_FRIEND_OF \cf7 \strokec7 \{\cf6 \strokec6 since_year\cf7 \strokec7 :[\cf10 \strokec10 2007\cf7 \strokec7 ]\}]->(\cf6 \strokec6 MarcosNode\cf7 \strokec7 )\cf6 \strokec6  \cf7 \strokec7 ,(\cf6 \strokec6 MarcosNode\cf7 \strokec7 )-[:\cf6 \strokec6 IS_FRIEND_OF \cf7 \strokec7 \{\cf6 \strokec6 since_year\cf7 \strokec7 :[\cf10 \strokec10 2007\cf7 \strokec7 ]\}]->(\cf6 \strokec6 JacoboNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 AnnunziataNode\cf7 \strokec7 )-[:\cf6 \strokec6 IS_FRIEND_OF \cf7 \strokec7 \{\cf6 \strokec6 since_year\cf7 \strokec7 :[\cf10 \strokec10 2015\cf7 \strokec7 ]\}]->(\cf6 \strokec6 YagoNode\cf7 \strokec7 ),\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 YagoNode\cf7 \strokec7 )-[:\cf6 \strokec6 IS_FRIEND_OF \cf7 \strokec7 \{\cf6 \strokec6 since_year\cf7 \strokec7 :[\cf10 \strokec10 2015\cf7 \strokec7 ]\}]->(\cf6 \strokec6 AnnunziataNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 AnnunziataNode\cf7 \strokec7 )-[:\cf6 \strokec6 IS_FRIEND_OF \cf7 \strokec7 \{\cf6 \strokec6 since_year\cf7 \strokec7 :[\cf10 \strokec10 2015\cf7 \strokec7 ]\}]->(\cf6 \strokec6 JimenaNode\cf7 \strokec7 ),\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 JimenaNode\cf7 \strokec7 )-[:\cf6 \strokec6 IS_FRIEND_OF \cf7 \strokec7 \{\cf6 \strokec6 since_year\cf7 \strokec7 :[\cf10 \strokec10 2015\cf7 \strokec7 ]\}]->(\cf6 \strokec6 AnnunziataNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 AnnunziataNode\cf7 \strokec7 )-[:\cf6 \strokec6 IS_FRIEND_OF \cf7 \strokec7 \{\cf6 \strokec6 since_year\cf7 \strokec7 :[\cf10 \strokec10 2015\cf7 \strokec7 ]\}]->(\cf6 \strokec6 PabloNode\cf7 \strokec7 ),(\cf6 \strokec6 PabloNode\cf7 \strokec7 )-[:\cf6 \strokec6 IS_FRIEND_OF \cf7 \strokec7 \{\cf6 \strokec6 since_year\cf7 \strokec7 :[\cf10 \strokec10 2015\cf7 \strokec7 ]\}]->(\cf6 \strokec6 AnnunziataNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 BeltranNode\cf7 \strokec7 )-[:\cf6 \strokec6 IS_FRIEND_OF \cf7 \strokec7 \{\cf6 \strokec6 since_year\cf7 \strokec7 :[\cf10 \strokec10 2020\cf7 \strokec7 ]\}]->(\cf6 \strokec6 JavierNode\cf7 \strokec7 ),\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 JavierNode\cf7 \strokec7 )-[:\cf6 \strokec6 IS_FRIEND_OF \cf7 \strokec7 \{\cf6 \strokec6 since_year\cf7 \strokec7 :[\cf10 \strokec10 2020\cf7 \strokec7 ]\}]->(\cf6 \strokec6 BeltranNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 BeltranNode\cf7 \strokec7 )-[:\cf6 \strokec6 IS_FRIEND_OF \cf7 \strokec7 \{\cf6 \strokec6 since_year\cf7 \strokec7 :[\cf10 \strokec10 2020\cf7 \strokec7 ]\}]->(\cf6 \strokec6 AnnunziataNode\cf7 \strokec7 )\cf6 \strokec6  \cf7 \strokec7 ,(\cf6 \strokec6 JavierNode\cf7 \strokec7 )-[:\cf6 \strokec6 IS_FRIEND_OF \cf7 \strokec7 \{\cf6 \strokec6 since_year\cf7 \strokec7 :[\cf10 \strokec10 2020\cf7 \strokec7 ]\}]->(\cf6 \strokec6 BeltranNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 BeltranNode\cf7 \strokec7 )-[:\cf6 \strokec6 IS_FRIEND_OF \cf7 \strokec7 \{\cf6 \strokec6 since_year\cf7 \strokec7 :[\cf10 \strokec10 2010\cf7 \strokec7 ]\}]->(\cf6 \strokec6 MarcosNode\cf7 \strokec7 ),\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 MarcosNode\cf7 \strokec7 )-[:\cf6 \strokec6 IS_FRIEND_OF \cf7 \strokec7 \{\cf6 \strokec6 since_year\cf7 \strokec7 :[\cf10 \strokec10 2010\cf7 \strokec7 ]\}]->(\cf6 \strokec6 BeltranNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 BeltranNode\cf7 \strokec7 )-[:\cf6 \strokec6 IS_FRIEND_OF \cf7 \strokec7 \{\cf6 \strokec6 since_year\cf7 \strokec7 :[\cf10 \strokec10 2010\cf7 \strokec7 ]\}]->(\cf6 \strokec6 MartaNode\cf7 \strokec7 )\cf6 \strokec6  \cf7 \strokec7 ,(\cf6 \strokec6 MarcosNode\cf7 \strokec7 )-[:\cf6 \strokec6 IS_FRIEND_OF \cf7 \strokec7 \{\cf6 \strokec6 since_year\cf7 \strokec7 :[\cf10 \strokec10 2010\cf7 \strokec7 ]\}]->(\cf6 \strokec6 BeltranNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 InesNode\cf7 \strokec7 )-[:\cf6 \strokec6 IS_FRIEND_OF \cf7 \strokec7 \{\cf6 \strokec6 since_year\cf7 \strokec7 :[\cf10 \strokec10 2007\cf7 \strokec7 ]\}]->(\cf6 \strokec6 EvaNode\cf7 \strokec7 ),\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 EvaNode\cf7 \strokec7 )-[:\cf6 \strokec6 IS_FRIEND_OF \cf7 \strokec7 \{\cf6 \strokec6 since_year\cf7 \strokec7 :[\cf10 \strokec10 2007\cf7 \strokec7 ]\}]->(\cf6 \strokec6 InesNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 InesNode\cf7 \strokec7 )-[:\cf6 \strokec6 IS_FRIEND_OF \cf7 \strokec7 \{\cf6 \strokec6 since_year\cf7 \strokec7 :[\cf10 \strokec10 2020\cf7 \strokec7 ]\}]->(\cf6 \strokec6 JavierNode\cf7 \strokec7 ),\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 JavierNode\cf7 \strokec7 )-[:\cf6 \strokec6 IS_FRIEND_OF \cf7 \strokec7 \{\cf6 \strokec6 since_year\cf7 \strokec7 :[\cf10 \strokec10 2020\cf7 \strokec7 ]\}]->(\cf6 \strokec6 InesNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 CeliaNode\cf7 \strokec7 )-[:\cf6 \strokec6 IS_FRIEND_OF \cf7 \strokec7 \{\cf6 \strokec6 since_year\cf7 \strokec7 :[\cf10 \strokec10 2012\cf7 \strokec7 ]\}]->(\cf6 \strokec6 JimenaNode\cf7 \strokec7 )\cf6 \strokec6  \cf7 \strokec7 ,(\cf6 \strokec6 JimenaNode\cf7 \strokec7 )-[:\cf6 \strokec6 IS_FRIEND_OF \cf7 \strokec7 \{\cf6 \strokec6 since_year\cf7 \strokec7 :[\cf10 \strokec10 2012\cf7 \strokec7 ]\}]->(\cf6 \strokec6 CeliaNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 CeliaNode\cf7 \strokec7 )-[:\cf6 \strokec6 IS_FRIEND_OF \cf7 \strokec7 \{\cf6 \strokec6 since_year\cf7 \strokec7 :[\cf10 \strokec10 2012\cf7 \strokec7 ]\}]->(\cf6 \strokec6 AnnunziataNode\cf7 \strokec7 ),\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 AnnunziataNode\cf7 \strokec7 )-[:\cf6 \strokec6 IS_FRIEND_OF \cf7 \strokec7 \{\cf6 \strokec6 since_year\cf7 \strokec7 :[\cf10 \strokec10 2012\cf7 \strokec7 ]\}]->(\cf6 \strokec6 CeliaNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 CeliaNode\cf7 \strokec7 )-[:\cf6 \strokec6 IS_FRIEND_OF \cf7 \strokec7 \{\cf6 \strokec6 since_year\cf7 \strokec7 :[\cf10 \strokec10 2012\cf7 \strokec7 ]\}]->(\cf6 \strokec6 SofiaNode\cf7 \strokec7 ),\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 SofiaNode\cf7 \strokec7 )-[:\cf6 \strokec6 IS_FRIEND_OF \cf7 \strokec7 \{\cf6 \strokec6 since_year\cf7 \strokec7 :[\cf10 \strokec10 2012\cf7 \strokec7 ]\}]->(\cf6 \strokec6 CeliaNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 SofiaNode\cf7 \strokec7 )-[:\cf6 \strokec6 IS_FRIEND_OF \cf7 \strokec7 \{\cf6 \strokec6 since_year\cf7 \strokec7 :[\cf10 \strokec10 2015\cf7 \strokec7 ]\}]->(\cf6 \strokec6 AnnunziataNode\cf7 \strokec7 ),\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 AnnunziataNode\cf7 \strokec7 )-[:\cf6 \strokec6 IS_FRIEND_OF \cf7 \strokec7 \{\cf6 \strokec6 since_year\cf7 \strokec7 :[\cf10 \strokec10 2015\cf7 \strokec7 ]\}]->(\cf6 \strokec6 SofiaNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 SofiaNode\cf7 \strokec7 )-[:\cf6 \strokec6 IS_FRIEND_OF \cf7 \strokec7 \{\cf6 \strokec6 since_year\cf7 \strokec7 :[\cf10 \strokec10 2015\cf7 \strokec7 ]\}]->(\cf6 \strokec6 YagoNode\cf7 \strokec7 ),\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 YagoNode\cf7 \strokec7 )-[:\cf6 \strokec6 IS_FRIEND_OF \cf7 \strokec7 \{\cf6 \strokec6 since_year\cf7 \strokec7 :[\cf10 \strokec10 2015\cf7 \strokec7 ]\}]->(\cf6 \strokec6 SofiaNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 JesusNode\cf7 \strokec7 )-[:\cf6 \strokec6 IS_FRIEND_OF \cf7 \strokec7 \{\cf6 \strokec6 since_year\cf7 \strokec7 :[\cf10 \strokec10 2005\cf7 \strokec7 ]\}]->(\cf6 \strokec6 AdolfoNode\cf7 \strokec7 ),\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 AdolfoNode\cf7 \strokec7 )-[:\cf6 \strokec6 IS_FRIEND_OF \cf7 \strokec7 \{\cf6 \strokec6 since_year\cf7 \strokec7 :[\cf10 \strokec10 2005\cf7 \strokec7 ]\}]->(\cf6 \strokec6 JesusNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 JesusNode\cf7 \strokec7 )-[:\cf6 \strokec6 IS_FRIEND_OF \cf7 \strokec7 \{\cf6 \strokec6 since_year\cf7 \strokec7 :[\cf10 \strokec10 2005\cf7 \strokec7 ]\}]->(\cf6 \strokec6 PabloNode\cf7 \strokec7 ),\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 PabloNode\cf7 \strokec7 )-[:\cf6 \strokec6 IS_FRIEND_OF \cf7 \strokec7 \{\cf6 \strokec6 since_year\cf7 \strokec7 :[\cf10 \strokec10 2005\cf7 \strokec7 ]\}]->(\cf6 \strokec6 JesusNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 JesusNode\cf7 \strokec7 )-[:\cf6 \strokec6 IS_FRIEND_OF \cf7 \strokec7 \{\cf6 \strokec6 since_year\cf7 \strokec7 :[\cf10 \strokec10 2005\cf7 \strokec7 ]\}]->(\cf6 \strokec6 AnnunNode\cf7 \strokec7 )\cf6 \strokec6  \cf7 \strokec7 ,(\cf6 \strokec6 AnnunNode\cf7 \strokec7 )-[:\cf6 \strokec6 IS_FRIEND_OF \cf7 \strokec7 \{\cf6 \strokec6 since_year\cf7 \strokec7 :[\cf10 \strokec10 2005\cf7 \strokec7 ]\}]->(\cf6 \strokec6 JesusNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 JesusNode\cf7 \strokec7 )-[:\cf6 \strokec6 IS_FRIEND_OF \cf7 \strokec7 \{\cf6 \strokec6 since_year\cf7 \strokec7 :[\cf10 \strokec10 2005\cf7 \strokec7 ]\}]->(\cf6 \strokec6 MTeresaNode\cf7 \strokec7 ),\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 MTeresaNode\cf7 \strokec7 )-[:\cf6 \strokec6 IS_FRIEND_OF \cf7 \strokec7 \{\cf6 \strokec6 since_year\cf7 \strokec7 :[\cf10 \strokec10 2005\cf7 \strokec7 ]\}]->(\cf6 \strokec6 JesusNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 MTeresaNode\cf7 \strokec7 )-[:\cf6 \strokec6 IS_FRIEND_OF \cf7 \strokec7 \{\cf6 \strokec6 since_year\cf7 \strokec7 :[\cf10 \strokec10 2005\cf7 \strokec7 ]\}]->(\cf6 \strokec6 PabloNode\cf7 \strokec7 ),\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 PabloNode\cf7 \strokec7 )-[:\cf6 \strokec6 IS_FRIEND_OF \cf7 \strokec7 \{\cf6 \strokec6 since_year\cf7 \strokec7 :[\cf10 \strokec10 2005\cf7 \strokec7 ]\}]->(\cf6 \strokec6 MTeresaNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 MTeresaNode\cf7 \strokec7 )-[:\cf6 \strokec6 IS_FRIEND_OF \cf7 \strokec7 \{\cf6 \strokec6 since_year\cf7 \strokec7 :[\cf10 \strokec10 2005\cf7 \strokec7 ]\}]->(\cf6 \strokec6 AnnunNode\cf7 \strokec7 )\cf6 \strokec6  \cf7 \strokec7 ,(\cf6 \strokec6 AnnunNode\cf7 \strokec7 )-[:\cf6 \strokec6 IS_FRIEND_OF \cf7 \strokec7 \{\cf6 \strokec6 since_year\cf7 \strokec7 :[\cf10 \strokec10 2005\cf7 \strokec7 ]\}]->(\cf6 \strokec6 MTeresaNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 MTeresaNode\cf7 \strokec7 )-[:\cf6 \strokec6 IS_FRIEND_OF \cf7 \strokec7 \{\cf6 \strokec6 since_year\cf7 \strokec7 :[\cf10 \strokec10 2005\cf7 \strokec7 ]\}]->(\cf6 \strokec6 AdolfoNode\cf7 \strokec7 ),\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 AdolfoNode\cf7 \strokec7 )-[:\cf6 \strokec6 IS_FRIEND_OF \cf7 \strokec7 \{\cf6 \strokec6 since_year\cf7 \strokec7 :[\cf10 \strokec10 2005\cf7 \strokec7 ]\}]->(\cf6 \strokec6 MTeresaNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 PabloNode\cf7 \strokec7 )-[:\cf6 \strokec6 IS_FRIEND_OF \cf7 \strokec7 \{\cf6 \strokec6 since_year\cf7 \strokec7 :[\cf10 \strokec10 2010\cf7 \strokec7 ]\}]->(\cf6 \strokec6 MarcosNode\cf7 \strokec7 )\cf6 \strokec6  \cf7 \strokec7 ,(\cf6 \strokec6 MarcosNode\cf7 \strokec7 )-[:\cf6 \strokec6 IS_FRIEND_OF \cf7 \strokec7 \{\cf6 \strokec6 since_year\cf7 \strokec7 :[\cf10 \strokec10 2010\cf7 \strokec7 ]\}]->(\cf6 \strokec6 PabloNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 novel1\cf7 \strokec7 )-[:\cf6 \strokec6 NOVEL_READ_BY\cf7 \strokec7 \{\cf6 \strokec6 days\cf7 \strokec7 :[\cf10 \strokec10 20\cf7 \strokec7 ]\}]->(\cf6 \strokec6 AnnunziataNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 novel1\cf7 \strokec7 )-[:\cf6 \strokec6 NOVEL_READ_BY\cf7 \strokec7 \{\cf6 \strokec6 days\cf7 \strokec7 :[\cf10 \strokec10 30\cf7 \strokec7 ]\}]->(\cf6 \strokec6 SofiaNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 novel1\cf7 \strokec7 )-[:\cf6 \strokec6 NOVEL_READ_BY\cf7 \strokec7 \{\cf6 \strokec6 days\cf7 \strokec7 :[\cf10 \strokec10 20\cf7 \strokec7 ]\}]->(\cf6 \strokec6 JimenaNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 novel2\cf7 \strokec7 )-[:\cf6 \strokec6 NOVEL_READ_BY\cf7 \strokec7 \{\cf6 \strokec6 days\cf7 \strokec7 :[\cf10 \strokec10 30\cf7 \strokec7 ]\}]->(\cf6 \strokec6 AnnunziataNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 novel3\cf7 \strokec7 )-[:\cf6 \strokec6 NOVEL_READ_BY\cf7 \strokec7 \{\cf6 \strokec6 days\cf7 \strokec7 :[\cf10 \strokec10 10\cf7 \strokec7 ]\}]->(\cf6 \strokec6 MartaNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 novel3\cf7 \strokec7 )-[:\cf6 \strokec6 NOVEL_READ_BY\cf7 \strokec7 \{\cf6 \strokec6 days\cf7 \strokec7 :[\cf10 \strokec10 20\cf7 \strokec7 ]\}]->(\cf6 \strokec6 MartsNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 novel4\cf7 \strokec7 )-[:\cf6 \strokec6 NOVEL_READ_BY\cf7 \strokec7 \{\cf6 \strokec6 days\cf7 \strokec7 :[\cf10 \strokec10 40\cf7 \strokec7 ]\}]->(\cf6 \strokec6 BeltranNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 novel6\cf7 \strokec7 )-[:\cf6 \strokec6 NOVEL_READ_BY\cf7 \strokec7 \{\cf6 \strokec6 days\cf7 \strokec7 :[\cf10 \strokec10 20\cf7 \strokec7 ]\}]->(\cf6 \strokec6 JesusNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 novel7\cf7 \strokec7 )-[:\cf6 \strokec6 NOVEL_READ_BY\cf7 \strokec7 \{\cf6 \strokec6 days\cf7 \strokec7 :[\cf10 \strokec10 35\cf7 \strokec7 ]\}]->(\cf6 \strokec6 InesNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 novel8\cf7 \strokec7 )-[:\cf6 \strokec6 NOVEL_READ_BY\cf7 \strokec7 \{\cf6 \strokec6 days\cf7 \strokec7 :[\cf10 \strokec10 20\cf7 \strokec7 ]\}]->(\cf6 \strokec6 JacoboNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 novel8\cf7 \strokec7 )-[:\cf6 \strokec6 NOVEL_READ_BY\cf7 \strokec7 \{\cf6 \strokec6 days\cf7 \strokec7 :[\cf10 \strokec10 40\cf7 \strokec7 ]\}]->(\cf6 \strokec6 PabloNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 novel8\cf7 \strokec7 )-[:\cf6 \strokec6 NOVEL_READ_BY\cf7 \strokec7 \{\cf6 \strokec6 days\cf7 \strokec7 :[\cf10 \strokec10 20\cf7 \strokec7 ]\}]->(\cf6 \strokec6 MarcosNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 novel9\cf7 \strokec7 )-[:\cf6 \strokec6 NOVEL_READ_BY\cf7 \strokec7 \{\cf6 \strokec6 days\cf7 \strokec7 :[\cf10 \strokec10 35\cf7 \strokec7 ]\}]->(\cf6 \strokec6 EduardoNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 novel10\cf7 \strokec7 )-[:\cf6 \strokec6 NOVEL_READ_BY\cf7 \strokec7 \{\cf6 \strokec6 days\cf7 \strokec7 :[\cf10 \strokec10 20\cf7 \strokec7 ]\}]->(\cf6 \strokec6 MTeresaNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 novel11\cf7 \strokec7 )-[:\cf6 \strokec6 NOVEL_READ_BY\cf7 \strokec7 \{\cf6 \strokec6 days\cf7 \strokec7 :[\cf10 \strokec10 30\cf7 \strokec7 ]\}]->(\cf6 \strokec6 AnnunziataNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 novel11\cf7 \strokec7 )-[:\cf6 \strokec6 NOVEL_READ_BY\cf7 \strokec7 \{\cf6 \strokec6 days\cf7 \strokec7 :[\cf10 \strokec10 40\cf7 \strokec7 ]\}]->(\cf6 \strokec6 AnnunziataNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 novel13\cf7 \strokec7 )-[:\cf6 \strokec6 NOVEL_READ_BY\cf7 \strokec7 \{\cf6 \strokec6 days\cf7 \strokec7 :[\cf10 \strokec10 20\cf7 \strokec7 ]\}]->(\cf6 \strokec6 MartaNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 novel14\cf7 \strokec7 )-[:\cf6 \strokec6 NOVEL_READ_BY\cf7 \strokec7 \{\cf6 \strokec6 days\cf7 \strokec7 :[\cf10 \strokec10 10\cf7 \strokec7 ]\}]->(\cf6 \strokec6 BeltranNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 novel1\cf7 \strokec7 )-[:\cf6 \strokec6  NOVEL_WRITTEN_BY\cf7 \strokec7 \{\cf6 \strokec6 method\cf7 \strokec7 :[\cf8 \strokec8 'computer'\cf7 \strokec7 ]\}]->(\cf6 \strokec6 authorJD\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 novel2\cf7 \strokec7 )-[:\cf6 \strokec6  NOVEL_WRITTEN_BY\cf7 \strokec7 \{\cf6 \strokec6 method\cf7 \strokec7 :[\cf8 \strokec8 'computer'\cf7 \strokec7 ]\}]->(\cf6 \strokec6 authorJD\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 novel3\cf7 \strokec7 )-[:\cf6 \strokec6  NOVEL_WRITTEN_BY\cf7 \strokec7 \{\cf6 \strokec6 method\cf7 \strokec7 :[\cf8 \strokec8 'paper'\cf7 \strokec7 ]\}]->(\cf6 \strokec6 authorVR\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 novel4\cf7 \strokec7 )-[:\cf6 \strokec6  NOVEL_WRITTEN_BY\cf7 \strokec7 \{\cf6 \strokec6 method\cf7 \strokec7 :[\cf8 \strokec8 'computer'\cf7 \strokec7 ]\}]->(\cf6 \strokec6 authorVR\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 novel5\cf7 \strokec7 )-[:\cf6 \strokec6  NOVEL_WRITTEN_BY\cf7 \strokec7 \{\cf6 \strokec6 method\cf7 \strokec7 :[\cf8 \strokec8 'paper'\cf7 \strokec7 ]\}]->(\cf6 \strokec6 authorMDe\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 novel6\cf7 \strokec7 )-[:\cf6 \strokec6  NOVEL_WRITTEN_BY\cf7 \strokec7 \{\cf6 \strokec6 method\cf7 \strokec7 :[\cf8 \strokec8 'paper'\cf7 \strokec7 ]\}]->(\cf6 \strokec6 authorMDe\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 novel7\cf7 \strokec7 )-[:\cf6 \strokec6  NOVEL_WRITTEN_BY\cf7 \strokec7 \{\cf6 \strokec6 method\cf7 \strokec7 :[\cf8 \strokec8 'computer'\cf7 \strokec7 ]\}]->(\cf6 \strokec6 authorVR\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 novel8\cf7 \strokec7 )-[:\cf6 \strokec6  NOVEL_WRITTEN_BY\cf7 \strokec7 \{\cf6 \strokec6 method\cf7 \strokec7 :[\cf8 \strokec8 'paper'\cf7 \strokec7 ]\}]->(\cf6 \strokec6 authorMD\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 novel9\cf7 \strokec7 )-[:\cf6 \strokec6  NOVEL_WRITTEN_BY\cf7 \strokec7 \{\cf6 \strokec6 method\cf7 \strokec7 :[\cf8 \strokec8 'paper'\cf7 \strokec7 ]\}]->(\cf6 \strokec6 authorMD\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 novel10\cf7 \strokec7 )-[:\cf6 \strokec6  NOVEL_WRITTEN_BY\cf7 \strokec7 \{\cf6 \strokec6 method\cf7 \strokec7 :[\cf8 \strokec8 'computer'\cf7 \strokec7 ]\}]->(\cf6 \strokec6 authorMD\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 novel11\cf7 \strokec7 )-[:\cf6 \strokec6  NOVEL_WRITTEN_BY\cf7 \strokec7 \{\cf6 \strokec6 method\cf7 \strokec7 :[\cf8 \strokec8 'paper'\cf7 \strokec7 ]\}]->(\cf6 \strokec6 authorMD\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 novel12\cf7 \strokec7 )-[:\cf6 \strokec6  NOVEL_WRITTEN_BY\cf7 \strokec7 \{\cf6 \strokec6 method\cf7 \strokec7 :[\cf8 \strokec8 'paper'\cf7 \strokec7 ]\}]->(\cf6 \strokec6 authorJD\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 novel13\cf7 \strokec7 )-[:\cf6 \strokec6  NOVEL_WRITTEN_BY\cf7 \strokec7 \{\cf6 \strokec6 method\cf7 \strokec7 :[\cf8 \strokec8 'computer'\cf7 \strokec7 ]\}]->(\cf6 \strokec6 authorMDe\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 novel14\cf7 \strokec7 )-[:\cf6 \strokec6  NOVEL_WRITTEN_BY\cf7 \strokec7 \{\cf6 \strokec6 method\cf7 \strokec7 :[\cf8 \strokec8 'paper'\cf7 \strokec7 ]\}]->(\cf6 \strokec6 authorMDe\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 novel1\cf7 \strokec7 )-[:\cf6 \strokec6  NOVEL_RECOMMENDED_BY\cf7 \strokec7 \{\cf6 \strokec6 stars\cf7 \strokec7 :[\cf10 \strokec10 2\cf7 \strokec7 ]\}]->(\cf6 \strokec6 AnnunziataNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 novel1\cf7 \strokec7 )-[:\cf6 \strokec6  NOVEL_RECOMMENDED_BY\cf7 \strokec7 \{\cf6 \strokec6 stars\cf7 \strokec7 :[\cf10 \strokec10 1\cf7 \strokec7 ]\}]->(\cf6 \strokec6 SofiaNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 novel2\cf7 \strokec7 )-[:\cf6 \strokec6  NOVEL_RECOMMENDED_BY\cf7 \strokec7 \{\cf6 \strokec6 stars\cf7 \strokec7 :[\cf10 \strokec10 2\cf7 \strokec7 ]\}]->(\cf6 \strokec6 JacoboNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 novel2\cf7 \strokec7 )-[:\cf6 \strokec6  NOVEL_RECOMMENDED_BY\cf7 \strokec7 \{\cf6 \strokec6 stars\cf7 \strokec7 :[\cf10 \strokec10 3\cf7 \strokec7 ]\}]->(\cf6 \strokec6 PabloNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 novel3\cf7 \strokec7 )-[:\cf6 \strokec6  NOVEL_RECOMMENDED_BY\cf7 \strokec7 \{\cf6 \strokec6 stars\cf7 \strokec7 :[\cf10 \strokec10 4\cf7 \strokec7 ]\}]->(\cf6 \strokec6 BeltranNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 novel4\cf7 \strokec7 )-[:\cf6 \strokec6  NOVEL_RECOMMENDED_BY\cf7 \strokec7 \{\cf6 \strokec6 stars\cf7 \strokec7 :[\cf10 \strokec10 5\cf7 \strokec7 ]\}]->(\cf6 \strokec6 AnnunziataNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 novel4\cf7 \strokec7 )-[:\cf6 \strokec6  NOVEL_RECOMMENDED_BY\cf7 \strokec7 \{\cf6 \strokec6 stars\cf7 \strokec7 :[\cf10 \strokec10 4\cf7 \strokec7 ]\}]->(\cf6 \strokec6 CeliaNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 novel4\cf7 \strokec7 )-[:\cf6 \strokec6  NOVEL_RECOMMENDED_BY\cf7 \strokec7 \{\cf6 \strokec6 stars\cf7 \strokec7 :[\cf10 \strokec10 3\cf7 \strokec7 ]\}]->(\cf6 \strokec6 AdolfoNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 novel5\cf7 \strokec7 )-[:\cf6 \strokec6  NOVEL_RECOMMENDED_BY\cf7 \strokec7 \{\cf6 \strokec6 stars\cf7 \strokec7 :[\cf10 \strokec10 2\cf7 \strokec7 ]\}]->(\cf6 \strokec6 AnnunNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 novel6\cf7 \strokec7 )-[:\cf6 \strokec6  NOVEL_RECOMMENDED_BY\cf7 \strokec7 \{\cf6 \strokec6 stars\cf7 \strokec7 :[\cf10 \strokec10 1\cf7 \strokec7 ]\}]->(\cf6 \strokec6 PabloNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 novel6\cf7 \strokec7 )-[:\cf6 \strokec6  NOVEL_RECOMMENDED_BY\cf7 \strokec7 \{\cf6 \strokec6 stars\cf7 \strokec7 :[\cf10 \strokec10 2\cf7 \strokec7 ]\}]->(\cf6 \strokec6 JesusNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 novel7\cf7 \strokec7 )-[:\cf6 \strokec6  NOVEL_RECOMMENDED_BY\cf7 \strokec7 \{\cf6 \strokec6 stars\cf7 \strokec7 :[\cf10 \strokec10 3\cf7 \strokec7 ]\}]->(\cf6 \strokec6 MarcosNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 novel8\cf7 \strokec7 )-[:\cf6 \strokec6  NOVEL_RECOMMENDED_BY\cf7 \strokec7 \{\cf6 \strokec6 stars\cf7 \strokec7 :[\cf10 \strokec10 4\cf7 \strokec7 ]\}]->(\cf6 \strokec6 EduardoNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 novel9\cf7 \strokec7 )-[:\cf6 \strokec6  NOVEL_RECOMMENDED_BY\cf7 \strokec7 \{\cf6 \strokec6 stars\cf7 \strokec7 :[\cf10 \strokec10 5\cf7 \strokec7 ]\}]->(\cf6 \strokec6 AnnunziataNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 novel9\cf7 \strokec7 )-[:\cf6 \strokec6  NOVEL_RECOMMENDED_BY\cf7 \strokec7 \{\cf6 \strokec6 stars\cf7 \strokec7 :[\cf10 \strokec10 4\cf7 \strokec7 ]\}]->(\cf6 \strokec6 AdolfoNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 novel9\cf7 \strokec7 )-[:\cf6 \strokec6  NOVEL_RECOMMENDED_BY\cf7 \strokec7 \{\cf6 \strokec6 stars\cf7 \strokec7 :[\cf10 \strokec10 3\cf7 \strokec7 ]\}]->(\cf6 \strokec6 JacoboNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 novel9\cf7 \strokec7 )-[:\cf6 \strokec6  NOVEL_RECOMMENDED_BY\cf7 \strokec7 \{\cf6 \strokec6 stars\cf7 \strokec7 :[\cf10 \strokec10 2\cf7 \strokec7 ]\}]->(\cf6 \strokec6 MartaNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 novel10\cf7 \strokec7 )-[:\cf6 \strokec6  NOVEL_RECOMMENDED_BY\cf7 \strokec7 \{\cf6 \strokec6 stars\cf7 \strokec7 :[\cf10 \strokec10 1\cf7 \strokec7 ]\}]->(\cf6 \strokec6 SofiaNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 novel10\cf7 \strokec7 )-[:\cf6 \strokec6  NOVEL_RECOMMENDED_BY\cf7 \strokec7 \{\cf6 \strokec6 stars\cf7 \strokec7 :[\cf10 \strokec10 2\cf7 \strokec7 ]\}]->(\cf6 \strokec6 JesusNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 novel11\cf7 \strokec7 )-[:\cf6 \strokec6  NOVEL_RECOMMENDED_BY\cf7 \strokec7 \{\cf6 \strokec6 stars\cf7 \strokec7 :[\cf10 \strokec10 3\cf7 \strokec7 ]\}]->(\cf6 \strokec6 GraciaNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 novel12\cf7 \strokec7 )-[:\cf6 \strokec6  NOVEL_RECOMMENDED_BY\cf7 \strokec7 \{\cf6 \strokec6 stars\cf7 \strokec7 :[\cf10 \strokec10 4\cf7 \strokec7 ]\}]->(\cf6 \strokec6 EduardoNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 novel12\cf7 \strokec7 )-[:\cf6 \strokec6  NOVEL_RECOMMENDED_BY\cf7 \strokec7 \{\cf6 \strokec6 stars\cf7 \strokec7 :[\cf10 \strokec10 5\cf7 \strokec7 ]\}]->(\cf6 \strokec6 JimenaNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 novel13\cf7 \strokec7 )-[:\cf6 \strokec6  NOVEL_RECOMMENDED_BY\cf7 \strokec7 \{\cf6 \strokec6 stars\cf7 \strokec7 :[\cf10 \strokec10 4\cf7 \strokec7 ]\}]->(\cf6 \strokec6 CeliaNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 novel14\cf7 \strokec7 )-[:\cf6 \strokec6  NOVEL_RECOMMENDED_BY\cf7 \strokec7 \{\cf6 \strokec6 stars\cf7 \strokec7 :[\cf10 \strokec10 3\cf7 \strokec7 ]\}]->(\cf6 \strokec6 CeliaNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 novel14\cf7 \strokec7 )-[:\cf6 \strokec6  NOVEL_RECOMMENDED_BY\cf7 \strokec7 \{\cf6 \strokec6 stars\cf7 \strokec7 :[\cf10 \strokec10 2\cf7 \strokec7 ]\}]->(\cf6 \strokec6 MTeresaNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 novel14\cf7 \strokec7 )-[:\cf6 \strokec6  NOVEL_RECOMMENDED_BY\cf7 \strokec7 \{\cf6 \strokec6 stars\cf7 \strokec7 :[\cf10 \strokec10 1\cf7 \strokec7 ]\}]->(\cf6 \strokec6 MartaNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 novel5\cf7 \strokec7 )-[:\cf6 \strokec6  NOVEL_RECOMMENDED_BY\cf7 \strokec7 \{\cf6 \strokec6 stars\cf7 \strokec7 :[\cf10 \strokec10 2\cf7 \strokec7 ]\}]->(\cf6 \strokec6 EvaNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 novel6\cf7 \strokec7 )-[:\cf6 \strokec6  NOVEL_RECOMMENDED_BY\cf7 \strokec7 \{\cf6 \strokec6 stars\cf7 \strokec7 :[\cf10 \strokec10 3\cf7 \strokec7 ]\}]->(\cf6 \strokec6 JesusNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 novel6\cf7 \strokec7 )-[:\cf6 \strokec6  NOVEL_RECOMMENDED_BY\cf7 \strokec7 \{\cf6 \strokec6 stars\cf7 \strokec7 :[\cf10 \strokec10 4\cf7 \strokec7 ]\}]->(\cf6 \strokec6 AnnunziataNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 novel7\cf7 \strokec7 )-[:\cf6 \strokec6  NOVEL_RECOMMENDED_BY\cf7 \strokec7 \{\cf6 \strokec6 stars\cf7 \strokec7 :[\cf10 \strokec10 5\cf7 \strokec7 ]\}]->(\cf6 \strokec6 EvaNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 authorMD\cf7 \strokec7 )-[:\cf6 \strokec6  AUTHOR_RECOMMENDED_BY\cf7 \strokec7 \{\cf6 \strokec6 how_much\cf7 \strokec7 :[\cf8 \strokec8 'very much'\cf7 \strokec7 ]\}]->(\cf6 \strokec6 AnnunziataNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 authorMD\cf7 \strokec7 )-[:\cf6 \strokec6  AUTHOR_RECOMMENDED_BY\cf7 \strokec7 \{\cf6 \strokec6 how_much\cf7 \strokec7 :[\cf8 \strokec8 'not much'\cf7 \strokec7 ]\}]->(\cf6 \strokec6 EvaNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 authorMD\cf7 \strokec7 )-[:\cf6 \strokec6  AUTHOR_RECOMMENDED_BY\cf7 \strokec7 \{\cf6 \strokec6 how_much\cf7 \strokec7 :[\cf8 \strokec8 'it is fine'\cf7 \strokec7 ]\}]->(\cf6 \strokec6 EduardoNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 authorJD\cf7 \strokec7 )-[:\cf6 \strokec6  AUTHOR_RECOMMENDED_BY\cf7 \strokec7 \{\cf6 \strokec6 how_much\cf7 \strokec7 :[\cf8 \strokec8 'very much'\cf7 \strokec7 ]\}]->(\cf6 \strokec6 GraciaNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 authorJD\cf7 \strokec7 )-[:\cf6 \strokec6  AUTHOR_RECOMMENDED_BY\cf7 \strokec7 \{\cf6 \strokec6 how_much\cf7 \strokec7 :[\cf8 \strokec8 'not much'\cf7 \strokec7 ]\}]->(\cf6 \strokec6 SofiaNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 authorJD\cf7 \strokec7 )-[:\cf6 \strokec6  AUTHOR_RECOMMENDED_BY\cf7 \strokec7 \{\cf6 \strokec6 how_much\cf7 \strokec7 :[\cf8 \strokec8 'it is fine'\cf7 \strokec7 ]\}]->(\cf6 \strokec6 BeltranNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 authorVR\cf7 \strokec7 )-[:\cf6 \strokec6  AUTHOR_RECOMMENDED_BY\cf7 \strokec7 \{\cf6 \strokec6 how_much\cf7 \strokec7 :[\cf8 \strokec8 'very much'\cf7 \strokec7 ]\}]->(\cf6 \strokec6 JacoboNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 authorVR\cf7 \strokec7 )-[:\cf6 \strokec6  AUTHOR_RECOMMENDED_BY\cf7 \strokec7 \{\cf6 \strokec6 how_much\cf7 \strokec7 :[\cf8 \strokec8 'not much'\cf7 \strokec7 ]\}]->(\cf6 \strokec6 AnnunNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 authorVR\cf7 \strokec7 )-[:\cf6 \strokec6  AUTHOR_RECOMMENDED_BY\cf7 \strokec7 \{\cf6 \strokec6 how_much\cf7 \strokec7 :[\cf8 \strokec8 'it is fine'\cf7 \strokec7 ]\}]->(\cf6 \strokec6 EduardoNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 authorMDe\cf7 \strokec7 )-[:\cf6 \strokec6  AUTHOR_RECOMMENDED_BY\cf7 \strokec7 \{\cf6 \strokec6 how_much\cf7 \strokec7 :[\cf8 \strokec8 'very much'\cf7 \strokec7 ]\}]->(\cf6 \strokec6 MTeresaNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 authorMDe\cf7 \strokec7 )-[:\cf6 \strokec6  AUTHOR_RECOMMENDED_BY\cf7 \strokec7 \{\cf6 \strokec6 how_much\cf7 \strokec7 :[\cf8 \strokec8 'it is fine'\cf7 \strokec7 ]\}]->(\cf6 \strokec6 PabloNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 authorMDe\cf7 \strokec7 )-[:\cf6 \strokec6  AUTHOR_RECOMMENDED_BY\cf7 \strokec7 \{\cf6 \strokec6 how_much\cf7 \strokec7 :[\cf8 \strokec8 'not much'\cf7 \strokec7 ]\}]->(\cf6 \strokec6 JesusNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 AnnunNode\cf7 \strokec7 )-[:\cf6 \strokec6  PARENT_OF\cf7 \strokec7 \{\cf6 \strokec6 type\cf7 \strokec7 :[\cf8 \strokec8 'very much'\cf7 \strokec7 ]\}]->(\cf6 \strokec6 AnnunziataNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 JesusNode\cf7 \strokec7 )-[:\cf6 \strokec6  PARENT_OF\cf7 \strokec7 \{\cf6 \strokec6 type\cf7 \strokec7 :[\cf8 \strokec8 'not much'\cf7 \strokec7 ]\}]->(\cf6 \strokec6 AnnunziataNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 MTeresaNode\cf7 \strokec7 )-[:\cf6 \strokec6  PARENT_OF\cf7 \strokec7 \{\cf6 \strokec6 type\cf7 \strokec7 :[\cf8 \strokec8 'it is fine'\cf7 \strokec7 ]\}]->(\cf6 \strokec6 MartaNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 AdolfoNode\cf7 \strokec7 )-[:\cf6 \strokec6  PARENT_OF\cf7 \strokec7 \{\cf6 \strokec6 type\cf7 \strokec7 :[\cf8 \strokec8 'very much'\cf7 \strokec7 ]\}]->(\cf6 \strokec6 MartaNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 AnnunNode\cf7 \strokec7 )-[:\cf6 \strokec6  PARENT_OF\cf7 \strokec7 \{\cf6 \strokec6 type\cf7 \strokec7 :[\cf8 \strokec8 'not much'\cf7 \strokec7 ]\}]->(\cf6 \strokec6 JimenaNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 JesusNode\cf7 \strokec7 )-[:\cf6 \strokec6  PARENT_OF\cf7 \strokec7 \{\cf6 \strokec6 type\cf7 \strokec7 :[\cf8 \strokec8 'it is fine'\cf7 \strokec7 ]\}]->(\cf6 \strokec6 JimenaNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 MTeresaNode\cf7 \strokec7 )-[:\cf6 \strokec6  PARENT_OF\cf7 \strokec7 \{\cf6 \strokec6 type\cf7 \strokec7 :[\cf8 \strokec8 'very much'\cf7 \strokec7 ]\}]->(\cf6 \strokec6 BeltranNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 AdolfoNode\cf7 \strokec7 )-[:\cf6 \strokec6  PARENT_OF\cf7 \strokec7 \{\cf6 \strokec6 type\cf7 \strokec7 :[\cf8 \strokec8 'not much'\cf7 \strokec7 ]\}]->(\cf6 \strokec6 BeltranNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 GraciaNode\cf7 \strokec7 )-[:\cf6 \strokec6  PARENT_OF\cf7 \strokec7 \{\cf6 \strokec6 type\cf7 \strokec7 :[\cf8 \strokec8 'it is fine'\cf7 \strokec7 ]\}]->(\cf6 \strokec6 EduardoNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 MartsNode\cf7 \strokec7 )-[:\cf6 \strokec6  PARENT_OF\cf7 \strokec7 \{\cf6 \strokec6 type\cf7 \strokec7 :[\cf8 \strokec8 'very much'\cf7 \strokec7 ]\}]->(\cf6 \strokec6 JacoboNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 MartsNode\cf7 \strokec7 )-[:\cf6 \strokec6  PARENT_OF\cf7 \strokec7 \{\cf6 \strokec6 type\cf7 \strokec7 :[\cf8 \strokec8 'it is fine'\cf7 \strokec7 ]\}]->(\cf6 \strokec6 PabloNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 JorgeNode\cf7 \strokec7 )-[:\cf6 \strokec6  PARENT_OF\cf7 \strokec7 \{\cf6 \strokec6 type\cf7 \strokec7 :[\cf8 \strokec8 'not much'\cf7 \strokec7 ]\}]->(\cf6 \strokec6 PabloNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 JorgeNode\cf7 \strokec7 )-[:\cf6 \strokec6  PARENT_OF\cf7 \strokec7 \{\cf6 \strokec6 typ\cf7 \strokec7 :[\cf8 \strokec8 'not much'\cf7 \strokec7 ]\}]->(\cf6 \strokec6 JacoboNode\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 novel2\cf7 \strokec7 )-[:\cf6 \strokec6  SUCCESOR_OF\cf7 \strokec7 \{\cf6 \strokec6 time_between\cf7 \strokec7 :[\cf10 \strokec10 1\cf7 \strokec7 ]\}]->(\cf6 \strokec6 novel1\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 novel12\cf7 \strokec7 )-[:\cf6 \strokec6  SUCCESOR_OF\cf7 \strokec7 \{\cf6 \strokec6 time_between\cf7 \strokec7 :[\cf10 \strokec10 7\cf7 \strokec7 ]\}]->(\cf6 \strokec6 novel2\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 novel4\cf7 \strokec7 )-[:\cf6 \strokec6  SUCCESOR_OF\cf7 \strokec7 \{\cf6 \strokec6 time_between\cf7 \strokec7 :[\cf10 \strokec10 1\cf7 \strokec7 ]\}]->(\cf6 \strokec6 novel3\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 novel7\cf7 \strokec7 )-[:\cf6 \strokec6  SUCCESOR_OF\cf7 \strokec7 \{\cf6 \strokec6 time_between\cf7 \strokec7 :[\cf10 \strokec10 1\cf7 \strokec7 ]\}]->(\cf6 \strokec6 novel4\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\cf4 \cb5 \strokec4 CREATE\cf6 \strokec6  \cf7 \strokec7 (\cf6 \strokec6 novel11\cf7 \strokec7 )-[:\cf6 \strokec6  SUCCESOR_OF\cf7 \strokec7 \{\cf6 \strokec6 time_between\cf7 \strokec7 :[\cf10 \strokec10 12\cf7 \strokec7 ]\}]->(\cf6 \strokec6 novel8\cf7 \strokec7 )\cf9 \cb1 \strokec9 \
+\
+\
+\
+\
+\
+\
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb11 \outl0\strokewidth0 \
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\f0\fs26 \cf0 \kerning1\expnd0\expndtw0 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs24 \cf12 \expnd0\expndtw0\kerning0
+\
+}
